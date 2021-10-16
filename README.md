@@ -10,5 +10,5 @@ The features you must have:
 3. Real-time text transmission.
 4. Push notification.
 
-<img src="https://user-images.githubusercontent.com/44459664/137600692-8d81a031-9150-4af8-9044-08956950fe6a.png" width="500" height="460"/>  
+<img src="https://user-images.githubusercontent.com/44459664/137600692-8d81a031-9150-4af8-9044-08956950fe6a.png" width="500" height="530"/>  
 
