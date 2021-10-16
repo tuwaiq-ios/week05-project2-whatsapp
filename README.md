@@ -1,4 +1,4 @@
-# week4-project1-The-chat-app
+# week4-project1-chat-app
 
 # Task 
 Creating a chat app is extremely convenient, since it’s a popular feature. It is also a great practice opportunity for developers who want to improve their skills. All these make it a perfect iOS app idea to be built by a starting developer.
