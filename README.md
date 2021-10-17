@@ -5,7 +5,7 @@ Creating a chat app is extremely convenient, since it’s a popular feature. It 
 
 The features you must have:
 
-1. Login/ Register with popular social platforms such as Facebook, Google, and Twitter.
+1. Login/ Register
 2. Show the list of conversations.
 3. Real-time text transmission.
 4. Push notification.
