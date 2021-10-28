@@ -1,14 +1,21 @@
-# week4-project1-chat-app
+# Week05 Project2: WhatsApp
 
-# Task 
-Creating a chat app is extremely convenient, since it’s a popular feature. It is also a great practice opportunity for developers who want to improve their skills. All these make it a perfect iOS app idea to be built by a starting developer.
+## Description 
+A chat app is extremely convenient, since it’s a popular feature. It is also a great practice opportunity for developers who want to improve their skills. All these make it a perfect iOS app idea to be built by a starting developer.
 
-The features you must have:
+### Features you must have:
+1. Login / Register
+2. Profile (name & status)
+3. List of people to chat with
+4. Realtime chat
 
-1. Login/ Register
-2. Show the list of conversations.
-3. Real-time text transmission.
-4. Push notification.
+### Bouns features:
+1. Favorite people
+2. Add profile image
+3. Play sound with each new message
 
-<img src="https://user-images.githubusercontent.com/44459664/137600692-8d81a031-9150-4af8-9044-08956950fe6a.png" width="550" height="530"/>  
+
+## Deadline
+Sunday 31 October
+
 
