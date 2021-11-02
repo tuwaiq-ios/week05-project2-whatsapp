@@ -36,6 +36,8 @@ class LoginVC: UIViewController {
          conf.font = UIFont.systemFont(ofSize: 18)
          conf.backgroundColor = .systemGray5
         conf.layer.cornerRadius = 22.5
+       
+        
         
     }
     
@@ -122,17 +124,20 @@ class LoginVC: UIViewController {
     
     
     @objc func SignupVC(_ sender: Any) {
-        let namee = name.text ?? ""
-        let emaill = email.text ?? ""
-        let passwordd = password.text ?? ""
-        let conff = conf.text ?? ""
+//        let namee = name.text ?? ""
+//        let emaill = email.text ?? ""
+//        let passwordd = password.text ?? ""
+//        let conff = conf.text ?? ""
         
-        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-        Firestore.firestore().document("users/\(currentUserID)").setData([
-            "name" : name.text,
-            "uID" : currentUserID,
-            
-        ])
+//        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+//        Firestore.firestore().document("users").setData([
+//            "name" : name.text,
+//            "uID" : currentUserID,
+//            "email" : email.text,
+//            "status" : ""
+//
+//        ])
+        
         
         if let email = email.text, email.isEmpty == false,
            let password = password.text, password.isEmpty == false {
@@ -147,12 +152,19 @@ class LoginVC: UIViewController {
                 } else {
                     print(error?.localizedDescription)
                 }
+                       guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+                      Firestore.firestore().document("users/\(currentUserID)").setData([
+                        "name" : self.name.text,
+                          "uID" : currentUserID,
+                        "email" : self.email.text,
+                           "status" : ""
+                       ])
             }
         }
-        
+       
+            }
+   
     }
-}
-
 
 extension LoginVC {
     func setupUI() {
@@ -195,6 +207,8 @@ extension LoginVC {
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             stackView.heightAnchor.constraint(equalToConstant: 270)
         ])
+        
+       
     }
     @objc func Segment(_ sender: Any) {
         
