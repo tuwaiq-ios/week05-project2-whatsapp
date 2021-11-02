@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>221918835179-5va2rh5v8l6nrpn92mpav9ji68f4lrkl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.221918835179-5va2rh5v8l6nrpn92mpav9ji68f4lrkl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDMm_OyqyvyrZkKFh4R8vr8SYdHA_PlqCc</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ahmed.WhatsChatApp</string>
+	<key>PROJECT_ID</key>
+	<string>whatschatapp-22a4c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whatschatapp-22a4c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:221918835179:ios:74354c37b0084b81c669ae</string>
+</dict>
+</plist>
