@@ -11,16 +11,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate, UITabBarControllerDeleg
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        guard let winScene = (scene as? UIWindowScene) else { return }
-
-              let vc = UINavigationController(rootViewController: MessagesController())
-              window = UIWindow(windowScene: winScene)
-              window?.rootViewController = vc
-              window?.makeKeyAndVisible()
-          }
-    }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window?.windowScene = windowScene
+        window?.makeKeyAndVisible()
+        let tabBar = UITabBarController()
+        let profile = UINavigationController(rootViewController: ProfileController())
+        profile.tabBarItem.title = "Profile"
+        profile.tabBarItem.image = UIImage(systemName: "person")!
+        let home = UINavigationController(rootViewController: MessagesController())
+        home.tabBarItem.title = "Chat"
+        home.tabBarItem.image = UIImage(systemName: "message")!
+        tabBar.delegate = self
+        tabBar.viewControllers = [home,profile]
+        tabBar.selectedIndex = 0
+        tabBar.tabBar.tintColor = .blue
+        tabBar.tabBar.backgroundColor = .white
+        tabBar.tabBar.layer.shadowColor = UIColor.black.cgColor
+        tabBar.tabBar.layer.shadowOpacity = 0.3
+        tabBar.tabBar.layer.shadowOffset = .zero
+        tabBar.tabBar.layer.shadowRadius = 1
+        window?.windowScene = windowScene
+        window?.makeKeyAndVisible()
+        window?.rootViewController = tabBar
+      }
+}
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.

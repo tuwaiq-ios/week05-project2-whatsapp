@@ -23,6 +23,7 @@
 		867FA3C6272FBA04003C3BB5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FA3C5272FBA04003C3BB5 /* Message.swift */; };
 		867FA3C8272FBBA8003C3BB5 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FA3C7272FBBA8003C3BB5 /* UserCell.swift */; };
 		867FA3CA272FBED7003C3BB5 /* ChatLogoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FA3C9272FBED7003C3BB5 /* ChatLogoController.swift */; };
+		8690A3512731E88C00B258A7 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690A3502731E88C00B258A7 /* ProfileController.swift */; };
 		EE6C566291C36B39FB2AC58B /* Pods_whatsApp__hanan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CCB51A27F8DF7FE32A1A /* Pods_whatsApp__hanan.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		867FA3C5272FBA04003C3BB5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		867FA3C7272FBBA8003C3BB5 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		867FA3C9272FBED7003C3BB5 /* ChatLogoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogoController.swift; sourceTree = "<group>"; };
+		8690A3502731E88C00B258A7 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		A92FEDFDBC052278A93E226A /* Pods-whatsApp- hanan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsApp- hanan.debug.xcconfig"; path = "Target Support Files/Pods-whatsApp- hanan/Pods-whatsApp- hanan.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +114,7 @@
 		86772E3E272CCF4300A6A8D1 /* whatsApp- hanan */ = {
 			isa = PBXGroup;
 			children = (
+				8690A3502731E88C00B258A7 /* ProfileController.swift */,
 				865B036D273067AB0035E975 /* View */,
 				865B036C273067880035E975 /* Controller */,
 				865B036B273067210035E975 /* Helpers */,
@@ -274,6 +277,7 @@
 				867756D0272E696300A5B7D7 /* User.swift in Sources */,
 				867FA3C6272FBA04003C3BB5 /* Message.swift in Sources */,
 				867756D4272EC3C700A5B7D7 /* Extensions.swift in Sources */,
+				8690A3512731E88C00B258A7 /* ProfileController.swift in Sources */,
 				867FA3CA272FBED7003C3BB5 /* ChatLogoController.swift in Sources */,
 				86772E54272CCFC000A6A8D1 /* LoginController.swift in Sources */,
 				867756D2272E705300A5B7D7 /* LoginController+handlers.swift in Sources */,
