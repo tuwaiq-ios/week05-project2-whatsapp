@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>325542746036-45u4nhbeuqn81i2ba13d1dbilb2s0dmg.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.325542746036-45u4nhbeuqn81i2ba13d1dbilb2s0dmg</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDCriTPf3pu_5BGubScvfWn_OFDYkWXZTo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>325542746036</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hanan.whatsApp--hanan</string>
+	<key>PROJECT_ID</key>
+	<string>whatsapp-hanan</string>
+	<key>STORAGE_BUCKET</key>
+	<string>whatsapp-hanan.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:325542746036:ios:dfa8b66f732611b08044e1</string>
+</dict>
+</plist>
