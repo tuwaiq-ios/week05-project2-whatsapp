@@ -51,15 +51,7 @@ class ProfileVC : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //        Firestore.firestore().document("currentUserID").addSnapshotListener { snapshot, error in
-        //            if error == nil {
-        //                guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-        //                if data["uID"] as? String == currentUserID {
-        //                    self.users.append(User(name: data["name"] as? String, status: data["status"] as? String, email: data["email"] as? String,
-        //                                           uID: data["uID"] as? String))
-        //                }
-        //            }
+
         view.backgroundColor = .white
         
         view.addSubview(img)
@@ -131,21 +123,36 @@ class ProfileVC : UIViewController{
             Button.heightAnchor.constraint(equalToConstant: 70)
             
         ])
+        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+        Firestore.firestore()
+            .document("users/\(currentUserID)")
+            .addSnapshotListener{Snapshot, error in
+                if error != nil {
+                    print (error)
+                    return
+                }
+                let sh = Snapshot?.document[0].data()
+                var Value = (sh!["name"] ?? "nothing")
+                var Value1 = (sh!["uID"] ?? "\(currentUserID)")
+                var Value2 = (sh!["status"] ?? "nothing")
         
     }
+    }
     
+
     @objc func B() {
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-        Firestore.firestore().document("users/waleed").setData([
-            
+        Firestore.firestore().document("users/\(currentUserID)").setData([
             "name" : name1.text,
             "uID" : currentUserID,
             "status" :status.text,
             
         ])
-        name1.isHidden = true
-        status.isHidden = true
+       
+                
+               // UserDefaults.standard.set("name", forKey: name1.text?)
+               // UserDefaults.standard.set("status", forKey:status.text? )
+
     }
-    
-}
+    }
 
