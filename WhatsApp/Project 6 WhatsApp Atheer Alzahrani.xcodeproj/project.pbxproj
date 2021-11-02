@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E3FE09D272BED31004284F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE09C272BED31004284F6 /* AppDelegate.swift */; };
+		1E3FE09F272BED31004284F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE09E272BED31004284F6 /* SceneDelegate.swift */; };
+		1E3FE0A1272BED31004284F6 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0A0272BED31004284F6 /* ConversationsViewController.swift */; };
+		1E3FE0A6272BED37004284F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3FE0A5272BED37004284F6 /* Assets.xcassets */; };
+		1E3FE0A9272BED37004284F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3FE0A7272BED37004284F6 /* LaunchScreen.storyboard */; };
+		1E3FE0B8272BF6E1004284F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0B7272BF6E1004284F6 /* LoginViewController.swift */; };
+		1E3FE0BA272BF721004284F6 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0B9272BF721004284F6 /* RegisterViewController.swift */; };
+		1E3FE0C0272BF7CF004284F6 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0BF272BF7CF004284F6 /* NewConversationViewController.swift */; };
+		1E3FE0C2272BF7FD004284F6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0C1272BF7FD004284F6 /* ProfileViewController.swift */; };
+		1E3FE0C5272D51AE004284F6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0C4272D51AD004284F6 /* Extensions.swift */; };
+		1E3FE0C9272DAC42004284F6 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0C8272DAC41004284F6 /* DatabaseManager.swift */; };
+		1E3FE0CB272DB7E5004284F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1E3FE0CA272DB7E5004284F6 /* GoogleService-Info.plist */; };
+		1E3FE0CF272DE0B7004284F6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0CE272DE0B7004284F6 /* TabBarViewController.swift */; };
+		1E3FE0D1272E745D004284F6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0D0272E745D004284F6 /* ChatViewController.swift */; };
+		1E3FE0D3272EB4F6004284F6 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3FE0D2272EB4F6004284F6 /* StorageManager.swift */; };
+		1EDA6036273006560014EF90 /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDA6035273006560014EF90 /* ConversationTableViewCell.swift */; };
+		A3EEB366B48F9659FF763163 /* Pods_Project_6_WhatsApp_Atheer_Alzahrani.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4006D583B03BCCB21335011B /* Pods_Project_6_WhatsApp_Atheer_Alzahrani.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E3FE099272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project 6 WhatsApp Atheer Alzahrani.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3FE09C272BED31004284F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E3FE09E272BED31004284F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1E3FE0A0272BED31004284F6 /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		1E3FE0A5272BED37004284F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E3FE0A8272BED37004284F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E3FE0AA272BED37004284F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E3FE0B7272BF6E1004284F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1E3FE0B9272BF721004284F6 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1E3FE0BF272BF7CF004284F6 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
+		1E3FE0C1272BF7FD004284F6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1E3FE0C4272D51AD004284F6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1E3FE0C8272DAC41004284F6 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		1E3FE0CA272DB7E5004284F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1E3FE0CE272DE0B7004284F6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		1E3FE0D0272E745D004284F6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		1E3FE0D2272EB4F6004284F6 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		1EDA6035273006560014EF90 /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		2C16A8BA51339F1531FD72E4 /* Pods-Project 6 WhatsApp Atheer Alzahrani.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 6 WhatsApp Atheer Alzahrani.release.xcconfig"; path = "Target Support Files/Pods-Project 6 WhatsApp Atheer Alzahrani/Pods-Project 6 WhatsApp Atheer Alzahrani.release.xcconfig"; sourceTree = "<group>"; };
+		3BE17BA5FF8950A4D419E90E /* Pods-Project 6 WhatsApp Atheer Alzahrani.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project 6 WhatsApp Atheer Alzahrani.debug.xcconfig"; path = "Target Support Files/Pods-Project 6 WhatsApp Atheer Alzahrani/Pods-Project 6 WhatsApp Atheer Alzahrani.debug.xcconfig"; sourceTree = "<group>"; };
+		4006D583B03BCCB21335011B /* Pods_Project_6_WhatsApp_Atheer_Alzahrani.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_6_WhatsApp_Atheer_Alzahrani.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E3FE096272BED31004284F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EEB366B48F9659FF763163 /* Pods_Project_6_WhatsApp_Atheer_Alzahrani.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E3FE090272BED31004284F6 = {
+			isa = PBXGroup;
+			children = (
+				1E3FE09B272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani */,
+				1E3FE09A272BED31004284F6 /* Products */,
+				C6072E3685092D7AC325DBE4 /* Pods */,
+				E44D9274D347725CA603A2DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E3FE09A272BED31004284F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE099272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E3FE09B272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE0CA272DB7E5004284F6 /* GoogleService-Info.plist */,
+				1E3FE0B5272BF4BA004284F6 /* Resources */,
+				1E3FE0B4272BF49F004284F6 /* ViewModels */,
+				1E3FE0B2272BF45C004284F6 /* Models */,
+				1E3FE0B1272BF44B004284F6 /* Views */,
+				1E3FE0B0272BF43A004284F6 /* Controllers */,
+				1E3FE0AA272BED37004284F6 /* Info.plist */,
+			);
+			path = "Project 6 WhatsApp Atheer Alzahrani";
+			sourceTree = "<group>";
+		};
+		1E3FE0B0272BF43A004284F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE0A0272BED31004284F6 /* ConversationsViewController.swift */,
+				1E3FE0C3272D42AA004284F6 /* Login */,
+				1E3FE0BF272BF7CF004284F6 /* NewConversationViewController.swift */,
+				1E3FE0C1272BF7FD004284F6 /* ProfileViewController.swift */,
+				1E3FE0CE272DE0B7004284F6 /* TabBarViewController.swift */,
+				1E3FE0D0272E745D004284F6 /* ChatViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1E3FE0B1272BF44B004284F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE0B6272BF53A004284F6 /* Storyboards */,
+				1E3FE0A5272BED37004284F6 /* Assets.xcassets */,
+				1EDA6035273006560014EF90 /* ConversationTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E3FE0B2272BF45C004284F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E3FE0B4272BF49F004284F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1E3FE0B5272BF4BA004284F6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE09C272BED31004284F6 /* AppDelegate.swift */,
+				1E3FE09E272BED31004284F6 /* SceneDelegate.swift */,
+				1E3FE0C4272D51AD004284F6 /* Extensions.swift */,
+				1E3FE0C8272DAC41004284F6 /* DatabaseManager.swift */,
+				1E3FE0D2272EB4F6004284F6 /* StorageManager.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1E3FE0B6272BF53A004284F6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE0A7272BED37004284F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1E3FE0C3272D42AA004284F6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1E3FE0B7272BF6E1004284F6 /* LoginViewController.swift */,
+				1E3FE0B9272BF721004284F6 /* RegisterViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C6072E3685092D7AC325DBE4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BE17BA5FF8950A4D419E90E /* Pods-Project 6 WhatsApp Atheer Alzahrani.debug.xcconfig */,
+				2C16A8BA51339F1531FD72E4 /* Pods-Project 6 WhatsApp Atheer Alzahrani.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E44D9274D347725CA603A2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4006D583B03BCCB21335011B /* Pods_Project_6_WhatsApp_Atheer_Alzahrani.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E3FE098272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E3FE0AD272BED37004284F6 /* Build configuration list for PBXNativeTarget "Project 6 WhatsApp Atheer Alzahrani" */;
+			buildPhases = (
+				DBD1B51873C83D9AE27A784D /* [CP] Check Pods Manifest.lock */,
+				1E3FE095272BED31004284F6 /* Sources */,
+				1E3FE096272BED31004284F6 /* Frameworks */,
+				1E3FE097272BED31004284F6 /* Resources */,
+				5EEB415CDB3C11B58D36F7F4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Project 6 WhatsApp Atheer Alzahrani";
+			productName = "Project 6 WhatsApp Atheer Alzahrani";
+			productReference = 1E3FE099272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E3FE091272BED31004284F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					1E3FE098272BED31004284F6 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 1E3FE094272BED31004284F6 /* Build configuration list for PBXProject "Project 6 WhatsApp Atheer Alzahrani" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E3FE090272BED31004284F6;
+			productRefGroup = 1E3FE09A272BED31004284F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E3FE098272BED31004284F6 /* Project 6 WhatsApp Atheer Alzahrani */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E3FE097272BED31004284F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3FE0A9272BED37004284F6 /* LaunchScreen.storyboard in Resources */,
+				1E3FE0CB272DB7E5004284F6 /* GoogleService-Info.plist in Resources */,
+				1E3FE0A6272BED37004284F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EEB415CDB3C11B58D36F7F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project 6 WhatsApp Atheer Alzahrani/Pods-Project 6 WhatsApp Atheer Alzahrani-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Project 6 WhatsApp Atheer Alzahrani/Pods-Project 6 WhatsApp Atheer Alzahrani-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project 6 WhatsApp Atheer Alzahrani/Pods-Project 6 WhatsApp Atheer Alzahrani-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD1B51873C83D9AE27A784D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Project 6 WhatsApp Atheer Alzahrani-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E3FE095272BED31004284F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E3FE0B8272BF6E1004284F6 /* LoginViewController.swift in Sources */,
+				1E3FE0C9272DAC42004284F6 /* DatabaseManager.swift in Sources */,
+				1E3FE0BA272BF721004284F6 /* RegisterViewController.swift in Sources */,
+				1E3FE0D3272EB4F6004284F6 /* StorageManager.swift in Sources */,
+				1E3FE0C0272BF7CF004284F6 /* NewConversationViewController.swift in Sources */,
+				1E3FE0A1272BED31004284F6 /* ConversationsViewController.swift in Sources */,
+				1EDA6036273006560014EF90 /* ConversationTableViewCell.swift in Sources */,
+				1E3FE0C5272D51AE004284F6 /* Extensions.swift in Sources */,
+				1E3FE09D272BED31004284F6 /* AppDelegate.swift in Sources */,
+				1E3FE0C2272BF7FD004284F6 /* ProfileViewController.swift in Sources */,
+				1E3FE0D1272E745D004284F6 /* ChatViewController.swift in Sources */,
+				1E3FE0CF272DE0B7004284F6 /* TabBarViewController.swift in Sources */,
+				1E3FE09F272BED31004284F6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1E3FE0A7272BED37004284F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E3FE0A8272BED37004284F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E3FE0AB272BED37004284F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E3FE0AC272BED37004284F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E3FE0AE272BED37004284F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BE17BA5FF8950A4D419E90E /* Pods-Project 6 WhatsApp Atheer Alzahrani.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMTAM79AVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Project 6 WhatsApp Atheer Alzahrani/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo for your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "atheer-alzahrani.Project-6-WhatsApp-Atheer-Alzahrani";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E3FE0AF272BED37004284F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C16A8BA51339F1531FD72E4 /* Pods-Project 6 WhatsApp Atheer Alzahrani.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BMTAM79AVD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Project 6 WhatsApp Atheer Alzahrani/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to select a photo for your profile.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "atheer-alzahrani.Project-6-WhatsApp-Atheer-Alzahrani";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E3FE094272BED31004284F6 /* Build configuration list for PBXProject "Project 6 WhatsApp Atheer Alzahrani" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3FE0AB272BED37004284F6 /* Debug */,
+				1E3FE0AC272BED37004284F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E3FE0AD272BED37004284F6 /* Build configuration list for PBXNativeTarget "Project 6 WhatsApp Atheer Alzahrani" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E3FE0AE272BED37004284F6 /* Debug */,
+				1E3FE0AF272BED37004284F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E3FE091272BED31004284F6 /* Project object */;
+}
