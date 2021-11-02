@@ -44,14 +44,12 @@ class ProfileVC : UIViewController{
         return $0
     }(UIButton())
     
-    let name2 = UILabel()
-    let status2 = UILabel()
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view.backgroundColor = .white
         
         view.addSubview(img)
@@ -76,17 +74,6 @@ class ProfileVC : UIViewController{
             //name1.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 100)
         ])
         
-        name2.font = .boldSystemFont(ofSize: 23)
-        name2.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(name2)
-        NSLayoutConstraint.activate([
-            
-            name2.topAnchor.constraint(equalTo: view.topAnchor,constant: 80),
-            name2.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 20),
-            name2.heightAnchor.constraint(equalToConstant: 40),
-            name2.widthAnchor.constraint(equalToConstant: 290),
-            //name1.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 100)
-        ])
         
         
         
@@ -102,17 +89,7 @@ class ProfileVC : UIViewController{
             status.widthAnchor.constraint(equalToConstant: 290),
         ])
         
-        status2.textColor = .green
-        status2.translatesAutoresizingMaskIntoConstraints = false
         
-        view.addSubview(status2)
-        NSLayoutConstraint.activate([
-            
-            status2.topAnchor.constraint(equalTo: view.topAnchor,constant: 140),
-            status2.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 20),
-            status2.heightAnchor.constraint(equalToConstant: 40),
-            status2.widthAnchor.constraint(equalToConstant: 290),
-        ])
         
         view.addSubview(Button)
         
@@ -123,36 +100,34 @@ class ProfileVC : UIViewController{
             Button.heightAnchor.constraint(equalToConstant: 70)
             
         ])
+        
+        
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
         Firestore.firestore()
             .document("users/\(currentUserID)")
-            .addSnapshotListener{Snapshot, error in
+            .addSnapshotListener{ doucument, error in
                 if error != nil {
                     print (error)
                     return
                 }
-//               // let sh = Snapshot?.document[0].data()
-//                var Value = (sh!["name"] ?? "nothing")
-//                var Value1 = (sh!["uID"] ?? "\(currentUserID)")
-//                var Value2 = (sh!["status"] ?? "nothing")
+                
+                self.name1.text = doucument?.data()?["name"] as? String
+                self.status.text = doucument?.data()?["status"] as? String 
+                
+                
+            }
         
     }
-    }
-    
-
     @objc func B() {
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-        Firestore.firestore().document("users/\(currentUserID)").setData([
+        Firestore.firestore().document("users/\(currentUserID)").updateData([
             "name" : name1.text,
             "uID" : currentUserID,
             "status" :status.text,
             
         ])
-       
-                
-               // UserDefaults.standard.set("name", forKey: name1.text?)
-               // UserDefaults.standard.set("status", forKey:status.text? )
-
+        
+        
     }
-    }
+}
 

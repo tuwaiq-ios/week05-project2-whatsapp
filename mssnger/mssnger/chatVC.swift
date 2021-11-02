@@ -139,7 +139,10 @@ extension ChatVC {
             if error == nil {
                 for document in snapshot!.documents{
                     let data = document.data()
-                    self.messages.append(Message(msg: data["message"] as? String, from: data["from"] as? String, to: data["to"]  as? String))
+                    self.messages.append(Message(
+                        msg: data["message"] as? String,
+                        from: data["from"] as? String,
+                        to: data["to"]  as? String))
                 }
                 self.chatTV.reloadData()
             }

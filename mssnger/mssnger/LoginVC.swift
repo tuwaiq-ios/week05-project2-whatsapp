@@ -51,7 +51,7 @@ class LoginVC: UIViewController {
     
     let email : UITextField = {
         $0.placeholder = "email"
-       // $0.text = "mssomf@hotmail.com"
+        $0.text = "mssomf@hotmail.com"
         $0.textAlignment = .center
         $0.backgroundColor = .init(white: 0.90, alpha: 1)
         $0.layer.cornerRadius = 22.5
@@ -62,7 +62,7 @@ class LoginVC: UIViewController {
     
     let password : UITextField = {
         $0.placeholder = "password"
-       // $0.text = "123456"
+        $0.text = "123456"
         $0.isSecureTextEntry = true
         $0.textAlignment = .center
         $0.backgroundColor = .init(white: 0.90, alpha: 1)
