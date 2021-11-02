@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05AD83902731B18C002BC515 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AD838F2731B18C002BC515 /* ProfileController.swift */; };
+		1F38E35F272C83FF00F05378 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E35E272C83FF00F05378 /* AppDelegate.swift */; };
+		1F38E361272C83FF00F05378 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E360272C83FF00F05378 /* SceneDelegate.swift */; };
+		1F38E366272C83FF00F05378 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F38E364272C83FF00F05378 /* Main.storyboard */; };
+		1F38E368272C840100F05378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F38E367272C840100F05378 /* Assets.xcassets */; };
+		1F38E36B272C840100F05378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F38E369272C840100F05378 /* LaunchScreen.storyboard */; };
+		1F38E373272C852600F05378 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F38E372272C852600F05378 /* GoogleService-Info.plist */; };
+		1F38E375272C899C00F05378 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E374272C899C00F05378 /* LoginController.swift */; };
+		1F38E37B272DC2AD00F05378 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E37A272DC2AD00F05378 /* NewMessageController.swift */; };
+		1F38E37D272DC56900F05378 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E37C272DC56900F05378 /* MessagesController.swift */; };
+		1F38E37F272DCA2500F05378 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E37E272DCA2500F05378 /* User.swift */; };
+		1F38E381272DD8BB00F05378 /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E380272DD8BB00F05378 /* LoginController+handlers.swift */; };
+		1F38E383272EC32D00F05378 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F38E382272EC32D00F05378 /* Extensions.swift */; };
+		1FF4955A272F0AC000C358B9 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF49559272F0AC000C358B9 /* ChatLogController.swift */; };
+		1FF4955C272F0FD500C358B9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4955B272F0FD500C358B9 /* Message.swift */; };
+		1FF4955E272F29C800C358B9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4955D272F29C800C358B9 /* UserCell.swift */; };
+		1FF49560272FD90500C358B9 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF4955F272FD90500C358B9 /* ChatMessageCell.swift */; };
+		9B4BBA350FD11C92C10C2FBA /* Pods_saraWhatsUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B872A1DDB07062D2640A274A /* Pods_saraWhatsUp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05AD838F2731B18C002BC515 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		1F38E35B272C83FF00F05378 /* saraWhatsUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saraWhatsUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F38E35E272C83FF00F05378 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F38E360272C83FF00F05378 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1F38E365272C83FF00F05378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F38E367272C840100F05378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F38E36A272C840100F05378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F38E36C272C840100F05378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F38E372272C852600F05378 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1F38E374272C899C00F05378 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1F38E37A272DC2AD00F05378 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		1F38E37C272DC56900F05378 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		1F38E37E272DCA2500F05378 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1F38E380272DD8BB00F05378 /* LoginController+handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
+		1F38E382272EC32D00F05378 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		1FF49559272F0AC000C358B9 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		1FF4955B272F0FD500C358B9 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1FF4955D272F29C800C358B9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		1FF4955F272FD90500C358B9 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		26C1F4BCD8B1E32F15CF4238 /* Pods-saraWhatsUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saraWhatsUp.release.xcconfig"; path = "Target Support Files/Pods-saraWhatsUp/Pods-saraWhatsUp.release.xcconfig"; sourceTree = "<group>"; };
+		A160D486BF264B9230657144 /* Pods-saraWhatsUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saraWhatsUp.debug.xcconfig"; path = "Target Support Files/Pods-saraWhatsUp/Pods-saraWhatsUp.debug.xcconfig"; sourceTree = "<group>"; };
+		B872A1DDB07062D2640A274A /* Pods_saraWhatsUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_saraWhatsUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F38E358272C83FF00F05378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B4BBA350FD11C92C10C2FBA /* Pods_saraWhatsUp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F38E352272C83FF00F05378 = {
+			isa = PBXGroup;
+			children = (
+				1F38E35D272C83FF00F05378 /* saraWhatsUp */,
+				1F38E35C272C83FF00F05378 /* Products */,
+				77590C58B6E07924119CE73B /* Pods */,
+				2DDB2C90BB0DE2EA3CF1F8D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1F38E35C272C83FF00F05378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F38E35B272C83FF00F05378 /* saraWhatsUp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F38E35D272C83FF00F05378 /* saraWhatsUp */ = {
+			isa = PBXGroup;
+			children = (
+				1F38E377272DBE5400F05378 /* model */,
+				1F38E35E272C83FF00F05378 /* AppDelegate.swift */,
+				1F38E360272C83FF00F05378 /* SceneDelegate.swift */,
+				1F38E376272DBE3A00F05378 /* controller */,
+				1F38E364272C83FF00F05378 /* Main.storyboard */,
+				1F38E367272C840100F05378 /* Assets.xcassets */,
+				1F38E369272C840100F05378 /* LaunchScreen.storyboard */,
+				1F38E36C272C840100F05378 /* Info.plist */,
+				1F38E372272C852600F05378 /* GoogleService-Info.plist */,
+			);
+			path = saraWhatsUp;
+			sourceTree = "<group>";
+		};
+		1F38E376272DBE3A00F05378 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				1F38E374272C899C00F05378 /* LoginController.swift */,
+				1F38E37C272DC56900F05378 /* MessagesController.swift */,
+				1FF4955D272F29C800C358B9 /* UserCell.swift */,
+				1F38E37A272DC2AD00F05378 /* NewMessageController.swift */,
+				1F38E380272DD8BB00F05378 /* LoginController+handlers.swift */,
+				1FF49559272F0AC000C358B9 /* ChatLogController.swift */,
+				05AD838F2731B18C002BC515 /* ProfileController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		1F38E377272DBE5400F05378 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1FF4955B272F0FD500C358B9 /* Message.swift */,
+				1F38E37E272DCA2500F05378 /* User.swift */,
+				1FF4955F272FD90500C358B9 /* ChatMessageCell.swift */,
+				1F38E382272EC32D00F05378 /* Extensions.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		2DDB2C90BB0DE2EA3CF1F8D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B872A1DDB07062D2640A274A /* Pods_saraWhatsUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77590C58B6E07924119CE73B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A160D486BF264B9230657144 /* Pods-saraWhatsUp.debug.xcconfig */,
+				26C1F4BCD8B1E32F15CF4238 /* Pods-saraWhatsUp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F38E35A272C83FF00F05378 /* saraWhatsUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F38E36F272C840100F05378 /* Build configuration list for PBXNativeTarget "saraWhatsUp" */;
+			buildPhases = (
+				BBE6214271FCB0E4B252EAA6 /* [CP] Check Pods Manifest.lock */,
+				1F38E357272C83FF00F05378 /* Sources */,
+				1F38E358272C83FF00F05378 /* Frameworks */,
+				1F38E359272C83FF00F05378 /* Resources */,
+				C01B3E2077808378D11B8977 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saraWhatsUp;
+			productName = saraWhatsUp;
+			productReference = 1F38E35B272C83FF00F05378 /* saraWhatsUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F38E353272C83FF00F05378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					1F38E35A272C83FF00F05378 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F38E356272C83FF00F05378 /* Build configuration list for PBXProject "saraWhatsUp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F38E352272C83FF00F05378;
+			productRefGroup = 1F38E35C272C83FF00F05378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F38E35A272C83FF00F05378 /* saraWhatsUp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F38E359272C83FF00F05378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F38E373272C852600F05378 /* GoogleService-Info.plist in Resources */,
+				1F38E36B272C840100F05378 /* LaunchScreen.storyboard in Resources */,
+				1F38E368272C840100F05378 /* Assets.xcassets in Resources */,
+				1F38E366272C83FF00F05378 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BBE6214271FCB0E4B252EAA6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-saraWhatsUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C01B3E2077808378D11B8977 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-saraWhatsUp/Pods-saraWhatsUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-saraWhatsUp/Pods-saraWhatsUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-saraWhatsUp/Pods-saraWhatsUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F38E357272C83FF00F05378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF4955A272F0AC000C358B9 /* ChatLogController.swift in Sources */,
+				1F38E37B272DC2AD00F05378 /* NewMessageController.swift in Sources */,
+				1F38E375272C899C00F05378 /* LoginController.swift in Sources */,
+				1F38E37F272DCA2500F05378 /* User.swift in Sources */,
+				05AD83902731B18C002BC515 /* ProfileController.swift in Sources */,
+				1F38E383272EC32D00F05378 /* Extensions.swift in Sources */,
+				1F38E35F272C83FF00F05378 /* AppDelegate.swift in Sources */,
+				1F38E381272DD8BB00F05378 /* LoginController+handlers.swift in Sources */,
+				1FF4955C272F0FD500C358B9 /* Message.swift in Sources */,
+				1F38E361272C83FF00F05378 /* SceneDelegate.swift in Sources */,
+				1FF49560272FD90500C358B9 /* ChatMessageCell.swift in Sources */,
+				1FF4955E272F29C800C358B9 /* UserCell.swift in Sources */,
+				1F38E37D272DC56900F05378 /* MessagesController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F38E364272C83FF00F05378 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F38E365272C83FF00F05378 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F38E369272C840100F05378 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F38E36A272C840100F05378 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F38E36D272C840100F05378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F38E36E272C840100F05378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F38E370272C840100F05378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A160D486BF264B9230657144 /* Pods-saraWhatsUp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVJKC8N3PQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = saraWhatsUp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sara-alzhrani.saraWhatsUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F38E371272C840100F05378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26C1F4BCD8B1E32F15CF4238 /* Pods-saraWhatsUp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVJKC8N3PQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = saraWhatsUp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sara-alzhrani.saraWhatsUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F38E356272C83FF00F05378 /* Build configuration list for PBXProject "saraWhatsUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F38E36D272C840100F05378 /* Debug */,
+				1F38E36E272C840100F05378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F38E36F272C840100F05378 /* Build configuration list for PBXNativeTarget "saraWhatsUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F38E370272C840100F05378 /* Debug */,
+				1F38E371272C840100F05378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F38E353272C83FF00F05378 /* Project object */;
+}
