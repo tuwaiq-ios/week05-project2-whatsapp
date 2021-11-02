@@ -10,11 +10,21 @@ import Firebase
 
 class LoginViewController: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     }
 
+    private let imageView: UIImageView = {
+        
+            let imageView = UIImageView()
+            imageView.image = UIImage(named: "ProfileIcon4")
+           imageView.contentMode = .scaleAspectFill
+     // imageView.sizeThatFits(.init(width: 50, height: 10))
+            return imageView
+        }()
     
     let emailTextField : UITextField = {
         $0.placeholder = "e-mail"
@@ -40,7 +50,7 @@ class LoginViewController: UIViewController {
     let logInButton : UIButton = {
         $0.setTitle("Log In", for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
-        $0.backgroundColor = .green
+        $0.backgroundColor = .gray
         $0.layer.cornerRadius = 22.5
         $0.tintColor = .white
         $0.addTarget(self, action: #selector(loginAction), for: .touchUpInside)
@@ -50,7 +60,7 @@ class LoginViewController: UIViewController {
     let signUpButton : UIButton = {
         $0.setTitle("Sign Up", for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
-        $0.backgroundColor = .systemBlue
+        $0.backgroundColor = .blue
         $0.layer.cornerRadius = 22.5
         $0.tintColor = .white
         $0.addTarget(self, action: #selector(showSignupVC), for: .touchUpInside)
@@ -62,7 +72,7 @@ class LoginViewController: UIViewController {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.axis = .vertical
         $0.distribution = .fillEqually
-        $0.spacing = 10
+        $0.spacing = 20
         return $0
     }(UIStackView())
     
@@ -97,6 +107,7 @@ extension LoginViewController {
         view.backgroundColor = .white
         
         view.addSubview(stackView)
+        stackView.addArrangedSubview(imageView)
         stackView.addArrangedSubview(emailTextField)
         stackView.addArrangedSubview(passwordTextField)
         stackView.addArrangedSubview(logInButton)
@@ -104,7 +115,8 @@ extension LoginViewController {
         
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 300),
+            stackView.topAnchor.constraint(equalTo: imageView.topAnchor, constant: 50),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             stackView.heightAnchor.constraint(equalToConstant: 210)

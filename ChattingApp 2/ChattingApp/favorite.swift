@@ -9,7 +9,7 @@ import UIKit
 class favorite:UIViewController{
     var img: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "background")
+        imageView.image = UIImage(named: "ProfileIcon3")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -26,16 +26,17 @@ class favorite:UIViewController{
         
         view.addSubview(img)
         NSLayoutConstraint.activate([
-            img.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
+            img.topAnchor.constraint(equalTo: view.topAnchor, constant: 50),
             img.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10),
             img.heightAnchor.constraint(equalToConstant: 80),
             img.widthAnchor.constraint(equalTo: img.heightAnchor,multiplier: 100/100)])
         
         
         
-        name.text = "tasnim"
+        name.text = "Tasnim"
         name.font = .boldSystemFont(ofSize: 23)
         name.translatesAutoresizingMaskIntoConstraints = false
+        name.textColor = UIColor.purple
         
         view.addSubview(name)
         NSLayoutConstraint.activate([
@@ -62,20 +63,20 @@ class favorite:UIViewController{
         
         var img: UIImageView = {
             let imageView = UIImageView()
-            imageView.image = UIImage(named: "background")
+            imageView.image = UIImage(named: "ProfileIcon2")
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
         }()
         let name = UILabel()
         let status = UILabel()
         
-    
-            
             view.backgroundColor = .orange
-            
+        
+        
+       //
             view.addSubview(img)
             NSLayoutConstraint.activate([
-                img.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
+                img.topAnchor.constraint(equalTo: view.topAnchor, constant: 130),
                 img.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10),
                 img.heightAnchor.constraint(equalToConstant: 80),
                 img.widthAnchor.constraint(equalTo: img.heightAnchor,multiplier: 100/100)])
@@ -85,11 +86,12 @@ class favorite:UIViewController{
             name.text = "Sara saud"
             name.font = .boldSystemFont(ofSize: 23)
             name.translatesAutoresizingMaskIntoConstraints = false
+            name.textColor = UIColor.purple
             
             view.addSubview(name)
             NSLayoutConstraint.activate([
                 
-                name.topAnchor.constraint(equalTo: view.topAnchor,constant: 80),
+                name.topAnchor.constraint(equalTo: view.topAnchor,constant: 90),
                 name.leftAnchor.constraint(equalTo: img.leftAnchor , constant: -130),
                 name.heightAnchor.constraint(equalToConstant: 120),
                 name.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 140)
@@ -108,7 +110,9 @@ class favorite:UIViewController{
                 status.heightAnchor.constraint(equalToConstant: 50),
                 status.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 130)
             ])
-        view.backgroundColor = .gray
+        
+        
+        view.backgroundColor = .lightGray
     
     }
     

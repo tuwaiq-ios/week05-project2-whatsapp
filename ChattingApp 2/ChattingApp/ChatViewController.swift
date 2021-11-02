@@ -42,7 +42,7 @@ class ChatViewController: UIViewController {
     let sendButton : UIButton = {
         $0.translatesAutoresizingMaskIntoConstraints = false
         $0.setBackgroundImage(UIImage(systemName: "paperplane.circle.fill"), for: .normal)
-        $0.tintColor = .purple
+        $0.tintColor = .blue
         $0.addTarget(self, action: #selector(sendMessage), for: .touchUpInside)
         return $0
     }(UIButton(type: .system))
@@ -100,10 +100,10 @@ extension ChatViewController : UITableViewDelegate , UITableViewDataSource {
         
         if messages[indexPath.row].sender == currentUserID {
             cell.textLabel?.textAlignment = .right
-            cell.textLabel?.textColor = .blue
+            cell.textLabel?.textColor = .black
         } else {
             cell.textLabel?.textAlignment = .left
-            cell.textLabel?.textColor = .green
+            cell.textLabel?.textColor = .blue
         }
         
         
@@ -133,8 +133,8 @@ extension ChatViewController {
     
     
     func getAllMessages() {
-        Firestore.firestore().collection("Messages").addSnapshotListener { snapshot, error in
-            self.messages.removeAll()
+        Firestore.firestore().collection("Messages").whereField("reciever",  isEqualTo: user?.userID).addSnapshotListener { snapshot, error in
+         self.messages.removeAll()
             if error == nil {
                 for document in snapshot!.documents{
                     let data = document.data()
