@@ -131,10 +131,10 @@ class ProfileVC : UIViewController{
                     print (error)
                     return
                 }
-                let sh = Snapshot?.document[0].data()
-                var Value = (sh!["name"] ?? "nothing")
-                var Value1 = (sh!["uID"] ?? "\(currentUserID)")
-                var Value2 = (sh!["status"] ?? "nothing")
+//               // let sh = Snapshot?.document[0].data()
+//                var Value = (sh!["name"] ?? "nothing")
+//                var Value1 = (sh!["uID"] ?? "\(currentUserID)")
+//                var Value2 = (sh!["status"] ?? "nothing")
         
     }
     }
