@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DF111CDAE10144246536BB1 /* Pods_whatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB140A4B6B850CCB3379397 /* Pods_whatsApp.framework */; };
+		5117D26F272ADDE90067392C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117D26E272ADDE90067392C /* AppDelegate.swift */; };
+		5117D271272ADDE90067392C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117D270272ADDE90067392C /* SceneDelegate.swift */; };
+		5117D278272ADDEA0067392C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5117D277272ADDEA0067392C /* Assets.xcassets */; };
+		5117D27B272ADDEA0067392C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5117D279272ADDEA0067392C /* LaunchScreen.storyboard */; };
+		5117D283272ADF840067392C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5117D282272ADF840067392C /* GoogleService-Info.plist */; };
+		515C7C6327306AA200C27032 /* TabBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515C7C6227306AA200C27032 /* TabBarCustom.swift */; };
+		51E17421272DC733000663B6 /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E17420272DC733000663B6 /* DBModel.swift */; };
+		51E17423272DC77D000663B6 /* DirectMessageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E17422272DC77D000663B6 /* DirectMessageScreen.swift */; };
+		51E17425272DC7F7000663B6 /* ChatScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E17424272DC7F7000663B6 /* ChatScreenTableViewCell.swift */; };
+		51E17427272DC843000663B6 /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E17426272DC843000663B6 /* ChatScreen.swift */; };
+		51E17429272DC969000663B6 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E17428272DC969000663B6 /* RegisterScreen.swift */; };
+		51E1742B272F263A000663B6 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E1742A272F263A000663B6 /* SettingsScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5117D26B272ADDE90067392C /* whatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5117D26E272ADDE90067392C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5117D270272ADDE90067392C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5117D277272ADDEA0067392C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5117D27A272ADDEA0067392C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5117D27C272ADDEA0067392C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5117D282272ADF840067392C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		515C7C6227306AA200C27032 /* TabBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCustom.swift; sourceTree = "<group>"; };
+		51E17420272DC733000663B6 /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		51E17422272DC77D000663B6 /* DirectMessageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageScreen.swift; sourceTree = "<group>"; };
+		51E17424272DC7F7000663B6 /* ChatScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenTableViewCell.swift; sourceTree = "<group>"; };
+		51E17426272DC843000663B6 /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
+		51E17428272DC969000663B6 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		51E1742A272F263A000663B6 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		8826BE39085D6916317254D2 /* Pods-whatsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsApp.debug.xcconfig"; path = "Target Support Files/Pods-whatsApp/Pods-whatsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A2E05119F97B486978E8D1C6 /* Pods-whatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsApp.release.xcconfig"; path = "Target Support Files/Pods-whatsApp/Pods-whatsApp.release.xcconfig"; sourceTree = "<group>"; };
+		CEB140A4B6B850CCB3379397 /* Pods_whatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5117D268272ADDE90067392C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF111CDAE10144246536BB1 /* Pods_whatsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5117D262272ADDE90067392C = {
+			isa = PBXGroup;
+			children = (
+				5117D26D272ADDE90067392C /* whatsApp */,
+				5117D26C272ADDE90067392C /* Products */,
+				B66DD6085732ECC5FA779584 /* Pods */,
+				5C7639C8BD6D9B0308B866DA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5117D26C272ADDE90067392C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5117D26B272ADDE90067392C /* whatsApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5117D26D272ADDE90067392C /* whatsApp */ = {
+			isa = PBXGroup;
+			children = (
+				51E1742C272F2643000663B6 /* Screens */,
+				5117D282272ADF840067392C /* GoogleService-Info.plist */,
+				5117D26E272ADDE90067392C /* AppDelegate.swift */,
+				5117D270272ADDE90067392C /* SceneDelegate.swift */,
+				51E17424272DC7F7000663B6 /* ChatScreenTableViewCell.swift */,
+				51E17420272DC733000663B6 /* DBModel.swift */,
+				5117D277272ADDEA0067392C /* Assets.xcassets */,
+				5117D279272ADDEA0067392C /* LaunchScreen.storyboard */,
+				5117D27C272ADDEA0067392C /* Info.plist */,
+				515C7C6227306AA200C27032 /* TabBarCustom.swift */,
+			);
+			path = whatsApp;
+			sourceTree = "<group>";
+		};
+		51E1742C272F2643000663B6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				51E17422272DC77D000663B6 /* DirectMessageScreen.swift */,
+				51E17428272DC969000663B6 /* RegisterScreen.swift */,
+				51E17426272DC843000663B6 /* ChatScreen.swift */,
+				51E1742A272F263A000663B6 /* SettingsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		5C7639C8BD6D9B0308B866DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEB140A4B6B850CCB3379397 /* Pods_whatsApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66DD6085732ECC5FA779584 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8826BE39085D6916317254D2 /* Pods-whatsApp.debug.xcconfig */,
+				A2E05119F97B486978E8D1C6 /* Pods-whatsApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5117D26A272ADDE90067392C /* whatsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5117D27F272ADDEA0067392C /* Build configuration list for PBXNativeTarget "whatsApp" */;
+			buildPhases = (
+				DE8CDF3A9E97951B9F8F60C1 /* [CP] Check Pods Manifest.lock */,
+				5117D267272ADDE90067392C /* Sources */,
+				5117D268272ADDE90067392C /* Frameworks */,
+				5117D269272ADDE90067392C /* Resources */,
+				4C4CFDFC1D876A337D94656A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whatsApp;
+			productName = whatsApp;
+			productReference = 5117D26B272ADDE90067392C /* whatsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5117D263272ADDE90067392C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					5117D26A272ADDE90067392C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 5117D266272ADDE90067392C /* Build configuration list for PBXProject "whatsApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5117D262272ADDE90067392C;
+			productRefGroup = 5117D26C272ADDE90067392C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5117D26A272ADDE90067392C /* whatsApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5117D269272ADDE90067392C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5117D27B272ADDEA0067392C /* LaunchScreen.storyboard in Resources */,
+				5117D278272ADDEA0067392C /* Assets.xcassets in Resources */,
+				5117D283272ADF840067392C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4C4CFDFC1D876A337D94656A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whatsApp/Pods-whatsApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whatsApp/Pods-whatsApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whatsApp/Pods-whatsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8CDF3A9E97951B9F8F60C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whatsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5117D267272ADDE90067392C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E1742B272F263A000663B6 /* SettingsScreen.swift in Sources */,
+				51E17421272DC733000663B6 /* DBModel.swift in Sources */,
+				51E17423272DC77D000663B6 /* DirectMessageScreen.swift in Sources */,
+				51E17429272DC969000663B6 /* RegisterScreen.swift in Sources */,
+				51E17427272DC843000663B6 /* ChatScreen.swift in Sources */,
+				5117D26F272ADDE90067392C /* AppDelegate.swift in Sources */,
+				51E17425272DC7F7000663B6 /* ChatScreenTableViewCell.swift in Sources */,
+				515C7C6327306AA200C27032 /* TabBarCustom.swift in Sources */,
+				5117D271272ADDE90067392C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5117D279272ADDEA0067392C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5117D27A272ADDEA0067392C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5117D27D272ADDEA0067392C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5117D27E272ADDEA0067392C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5117D280272ADDEA0067392C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8826BE39085D6916317254D2 /* Pods-whatsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R45CVNVGSJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = whatsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maram.whatsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5117D281272ADDEA0067392C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E05119F97B486978E8D1C6 /* Pods-whatsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R45CVNVGSJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = whatsApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maram.whatsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5117D266272ADDE90067392C /* Build configuration list for PBXProject "whatsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5117D27D272ADDEA0067392C /* Debug */,
+				5117D27E272ADDEA0067392C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5117D27F272ADDEA0067392C /* Build configuration list for PBXNativeTarget "whatsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5117D280272ADDEA0067392C /* Debug */,
+				5117D281272ADDEA0067392C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5117D263272ADDE90067392C /* Project object */;
+}

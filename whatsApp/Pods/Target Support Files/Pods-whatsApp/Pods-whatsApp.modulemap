@@ -1,0 +1,6 @@
+framework module Pods_whatsApp {
+  umbrella header "Pods-whatsApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
