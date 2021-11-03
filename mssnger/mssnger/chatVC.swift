@@ -7,7 +7,7 @@
 import UIKit
 import Firebase
 class ChatVC: UIViewController {
-
+    
     
     var user : User?
     var messages = [Message]()
@@ -103,50 +103,64 @@ extension ChatVC : UITableViewDelegate , UITableViewDataSource {
             cell.textLabel?.textAlignment = .left
             cell.textLabel?.textColor = .red
         }
- 
+        
         
         return cell
     }
-    
-    
+
 }
 
 
 extension ChatVC {
     @objc func sendMessage() {
-        let mm = String(Date().timeIntervalSince1970)
+        
+        let messageId = String(Date().timeIntervalSince1970)
+        
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
         guard let message = messageTextField.text else {return}
         guard let user = user else {return}
-        Firestore.firestore().document("Messages/\(mm)").setData([
-            "from" : currentUserID,
-            "to" : user.uID!,
-            "message" : message
-        ])
         
+        Firestore.firestore()
+            .document("Messages/\(messageId)")
+            .setData(["from" : currentUserID,
+                      "to" : user.uID!,
+                      "message" : message
+                     ])
         messageTextField.text = ""
     }
-    
-    
+  
     func getAllMessages() {
         
-        Firestore.firestore().collection("Messages").whereField("to", isEqualTo: user?.uID!).addSnapshotListener { snapshot, error in
-            self.messages.removeAll()
-            if error == nil {
-                for document in snapshot!.documents{
-                    let data = document.data()
-                    self.messages.append(Message(
-                        message: data["message"] as? String,
-                        from1: data["from"] as? String,
-                        to: data["to"]  as? String))
-                    
-                
-                    
+        Firestore.firestore()
+            .collection("Messages")
+            .addSnapshotListener { (snapshot, error) in
+                self.messages = []
+                if let e = error {
+                    print(e)
+                }else {
+                    if let snapshotDocuments = snapshot?.documents{
+                        
+                        for doc in snapshotDocuments {
+                            let data = doc.data()
+                            
+                            self.messages.append(Message(
+                                
+                                message: data["message"] as? String,
+                                from1: data["from"] as? String,
+                                to: data["to"]  as? String))
+                        }
+                        
+                        DispatchQueue.main.async {
+                            self.chatTV.reloadData()
+                            
+                            let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                            self.chatTV.scrollToRow(at: indexPath, at: .top, animated: true)
+                        }
+                    }
                 }
-                self.chatTV.reloadData()
             }
-        }
     }
 }
+
 
 

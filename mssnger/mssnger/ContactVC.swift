@@ -22,22 +22,22 @@ class  ContactVC: UITableViewController {
         navigationItem.title = "users"
         
         
-        tableView.delegate = self
-        tableView.dataSource = self
+//        tableView.delegate = self
+//        tableView.dataSource = self
         
         
         //em.text = Auth.auth().currentUser?.email
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        em.textColor = .blue
-        em.font = .boldSystemFont(ofSize: 20)
-        em.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(em)
-        NSLayoutConstraint.activate([
-            em.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 5),
-            em.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5)
-        ])
-        
+//        em.textColor = .blue
+//        em.font = .boldSystemFont(ofSize: 20)
+//        em.translatesAutoresizingMaskIntoConstraints = false
+//        view.addSubview(em)
+//        NSLayoutConstraint.activate([
+//            em.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 5),
+//            em.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 5)
+//        ])
+//
         
         getUsers()
         
@@ -54,12 +54,12 @@ class  ContactVC: UITableViewController {
        // cell.textLabel?.text = Auth.auth().currentUser?.email
         return cell
     }
-    
+  
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = ChatVC()
         vc.user = users[indexPath.row]
-        self.present(vc, animated: true, completion: nil)
-       // navigationController?.pushViewController(vc, animated: true)
+        //self.present(vc, animated: true, completion: nil)
+       navigationController?.pushViewController(vc, animated: true)
     }
     
     

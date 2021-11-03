@@ -19,7 +19,7 @@ struct User {
     let name : String?
     let status : String?
     let email : String?
-    let uID : String?
+    var uID : String?
 }
 
 
