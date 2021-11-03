@@ -7,10 +7,7 @@
 import UIKit
 import Firebase
 class ChatVC: UIViewController {
-    
-    
-    
-    
+
     
     var user : User?
     var messages = [Message]()
@@ -97,18 +94,16 @@ extension ChatVC : UITableViewDelegate , UITableViewDataSource {
         
         let currentUserID = Auth.auth().currentUser?.uid
         
-        cell.textLabel?.text = messages[indexPath.row].msg
+        cell.textLabel?.text = messages[indexPath.row].message
         
-        if messages[indexPath.row].from == currentUserID {
+        if messages[indexPath.row].from1 == currentUserID {
             cell.textLabel?.textAlignment = .right
             cell.textLabel?.textColor = .blue
         } else {
             cell.textLabel?.textAlignment = .left
             cell.textLabel?.textColor = .red
         }
-        
-        
-        
+ 
         
         return cell
     }
@@ -119,11 +114,11 @@ extension ChatVC : UITableViewDelegate , UITableViewDataSource {
 
 extension ChatVC {
     @objc func sendMessage() {
-        //let messageId = String(Date().timeIntervalSince1970)
+        let mm = String(Date().timeIntervalSince1970)
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
         guard let message = messageTextField.text else {return}
         guard let user = user else {return}
-        Firestore.firestore().collection("Messages").addDocument(data: [
+        Firestore.firestore().document("Messages/\(mm)").setData([
             "from" : currentUserID,
             "to" : user.uID!,
             "message" : message
@@ -134,19 +129,24 @@ extension ChatVC {
     
     
     func getAllMessages() {
+        
         Firestore.firestore().collection("Messages").whereField("to", isEqualTo: user?.uID!).addSnapshotListener { snapshot, error in
             self.messages.removeAll()
             if error == nil {
                 for document in snapshot!.documents{
                     let data = document.data()
                     self.messages.append(Message(
-                        msg: data["message"] as? String,
-                        from: data["from"] as? String,
+                        message: data["message"] as? String,
+                        from1: data["from"] as? String,
                         to: data["to"]  as? String))
+                    
+                
+                    
                 }
                 self.chatTV.reloadData()
             }
         }
     }
 }
+
 

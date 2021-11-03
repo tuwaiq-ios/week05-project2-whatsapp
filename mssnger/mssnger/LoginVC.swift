@@ -30,13 +30,13 @@ class LoginVC: UIViewController {
         
         
         conf.placeholder = "Conf Password"
-         conf.textAlignment = .center
-         conf.translatesAutoresizingMaskIntoConstraints = false
-         conf.textColor = .black
-         conf.font = UIFont.systemFont(ofSize: 18)
-         conf.backgroundColor = .systemGray5
+        conf.textAlignment = .center
+        conf.translatesAutoresizingMaskIntoConstraints = false
+        conf.textColor = .black
+        conf.font = UIFont.systemFont(ofSize: 18)
+        conf.backgroundColor = .systemGray5
         conf.layer.cornerRadius = 22.5
-       
+        
         
         
     }
@@ -60,7 +60,7 @@ class LoginVC: UIViewController {
         return $0
     }(UITextField())
     
-      
+    
     
     let password : UITextField = {
         $0.placeholder = "password"
@@ -124,19 +124,19 @@ class LoginVC: UIViewController {
     
     
     @objc func SignupVC(_ sender: Any) {
-//        let namee = name.text ?? ""
-//        let emaill = email.text ?? ""
-//        let passwordd = password.text ?? ""
-//        let conff = conf.text ?? ""
+        //        let namee = name.text ?? ""
+        //        let emaill = email.text ?? ""
+        //        let passwordd = password.text ?? ""
+        //        let conff = conf.text ?? ""
         
-//        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-//        Firestore.firestore().document("users").setData([
-//            "name" : name.text,
-//            "uID" : currentUserID,
-//            "email" : email.text,
-//            "status" : ""
-//
-//        ])
+        //        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+        //        Firestore.firestore().document("users").setData([
+        //            "name" : name.text,
+        //            "uID" : currentUserID,
+        //            "email" : email.text,
+        //            "status" : ""
+        //
+        //        ])
         
         
         if let email = email.text, email.isEmpty == false,
@@ -152,19 +152,19 @@ class LoginVC: UIViewController {
                 } else {
                     print(error?.localizedDescription)
                 }
-                       guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-                      Firestore.firestore().document("users/\(currentUserID)").setData([
-                        "name" : self.name.text,
-                          "uID" : currentUserID,
-                        "email" : self.email.text,
-                           "status" : ""
-                       ])
+                guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+                Firestore.firestore().document("users/\(currentUserID)").setData([
+                    "name" : self.name.text,
+                    "uID" : currentUserID,
+                    "email" : self.email.text,
+                    "status" : "online"
+                ])
             }
         }
-       
-            }
-   
+        
     }
+    
+}
 
 extension LoginVC {
     func setupUI() {
@@ -198,7 +198,7 @@ extension LoginVC {
         
         segmentedControl.addTarget(self, action: #selector(Segment), for: .valueChanged)
         
-       
+        
         
         
         NSLayoutConstraint.activate([
@@ -208,7 +208,7 @@ extension LoginVC {
             stackView.heightAnchor.constraint(equalToConstant: 270)
         ])
         
-       
+        
     }
     @objc func Segment(_ sender: Any) {
         

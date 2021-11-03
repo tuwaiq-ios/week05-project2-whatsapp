@@ -45,6 +45,16 @@ class ProfileVC : UIViewController{
     }(UIButton())
     
     
+    let Button1 : UIButton = {
+        $0.backgroundColor = .white
+        $0.setTitle("sign out", for: .normal)
+        $0.setTitleColor(UIColor.red, for: .normal)
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.addTarget(self, action: #selector(A), for: .touchUpInside)
+        return $0
+    }(UIButton())
+    
+    
     
     
     override func viewDidLoad() {
@@ -101,6 +111,16 @@ class ProfileVC : UIViewController{
             
         ])
         
+        view.addSubview(Button1)
+        
+        NSLayoutConstraint.activate([
+            Button1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 570),
+            Button1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+            Button1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+            Button1.heightAnchor.constraint(equalToConstant: 70)
+            
+        ])
+        
         
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
         Firestore.firestore()
@@ -112,7 +132,7 @@ class ProfileVC : UIViewController{
                 }
                 
                 self.name1.text = doucument?.data()?["name"] as? String
-                self.status.text = doucument?.data()?["status"] as? String 
+                self.status.text = doucument?.data()?["status"] as? String
                 
                 
             }
@@ -126,8 +146,34 @@ class ProfileVC : UIViewController{
             "status" :status.text,
             
         ])
+        let alert1 = UIAlertController(
+            title: ("Saved"),
+            message: "Saved update data",
+            preferredStyle: .alert)
+        
+        alert1.addAction(
+            UIAlertAction(
+                title: "OK",
+                style: .default,
+                handler: { action in
+                    print("OK")
+                }
+            )
+        )
         
         
+        present(alert1, animated: true, completion: nil)
+        
+        
+    }
+@objc func A() {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            dismiss(animated: true, completion: nil)
+        } catch let signOutError as NSError {
+            print ("Error signing out: \(signOutError.localizedDescription)")
+        }
     }
 }
 

@@ -8,9 +8,10 @@
 import Foundation
 
 struct Message {
-    let msg : String?
-    let from : String?
+    let message : String?
+    let from1 : String?
     let to : String?
+   // let date : String?
 }
 
 
