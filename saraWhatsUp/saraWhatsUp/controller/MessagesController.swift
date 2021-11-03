@@ -141,7 +141,7 @@ class MessagesController: UITableViewController {
             return message1.timestamp?.int32Value > message2.timestamp?.int32Value
         })
         
-        //this will crash because of background thread, so lets call this on dispatch_async main thread
+        
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
         })
@@ -253,7 +253,7 @@ class MessagesController: UITableViewController {
         containerView.addSubview(nameLabel)
         nameLabel.text = user.name
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        //need x,y,width,height anchors
+        
         nameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 8).isActive = true
         nameLabel.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor).isActive = true
         nameLabel.rightAnchor.constraint(equalTo: containerView.rightAnchor).isActive = true

@@ -33,7 +33,7 @@ class ProfileController: UIViewController {
     lazy var saveButton : UIButton = {
         let button = UIButton()
         button.tintColor = .white
-        button.backgroundColor = .blue
+        button.backgroundColor = UIColor(r: 80, g: 101, b: 161)
         button.layer.cornerRadius = 25
         button.setTitle("Save", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
