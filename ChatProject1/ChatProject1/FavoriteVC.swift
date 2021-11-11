@@ -6,11 +6,10 @@
 //
 
 import UIKit
-
-class FavoriteVC: UIViewController{
+class FavoriteVC:UIViewController{
     var img: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "background")
+        imageView.image = UIImage(named: "photo3")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -34,7 +33,7 @@ class FavoriteVC: UIViewController{
         
         
         
-        name.text = "Sara"
+        name.text = "Hassan"
         name.font = .boldSystemFont(ofSize: 23)
         name.translatesAutoresizingMaskIntoConstraints = false
         
@@ -49,7 +48,7 @@ class FavoriteVC: UIViewController{
         
         
         status.text = "Favorite"
-        status.textColor = .cyan
+        status.textColor = .orange
         status.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(status)
@@ -63,7 +62,7 @@ class FavoriteVC: UIViewController{
         
         var img: UIImageView = {
             let imageView = UIImageView()
-            imageView.image = UIImage(named: "background")
+            imageView.image = UIImage(named: "photo3")
             imageView.translatesAutoresizingMaskIntoConstraints = false
             return imageView
         }()
@@ -72,25 +71,26 @@ class FavoriteVC: UIViewController{
         
     
             
-        view.backgroundColor = .clear
+            view.backgroundColor = .orange
             
             view.addSubview(img)
             NSLayoutConstraint.activate([
                 img.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
                 img.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10),
+                
                 img.heightAnchor.constraint(equalToConstant: 80),
                 img.widthAnchor.constraint(equalTo: img.heightAnchor,multiplier: 100/100)])
             
             
             
-            name.text = "Hassan"
+            name.text = "Deema"
             name.font = .boldSystemFont(ofSize: 23)
             name.translatesAutoresizingMaskIntoConstraints = false
             
             view.addSubview(name)
             NSLayoutConstraint.activate([
                 
-                name.topAnchor.constraint(equalTo: view.topAnchor,constant: 80),
+                name.topAnchor.constraint(equalTo: view.topAnchor,constant: 100),
                 name.leftAnchor.constraint(equalTo: img.leftAnchor , constant: -130),
                 name.heightAnchor.constraint(equalToConstant: 120),
                 name.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 140)
@@ -98,13 +98,13 @@ class FavoriteVC: UIViewController{
             
             
             status.text = "Favorite"
-        status.textColor = .cyan
+            status.textColor = .orange
             status.translatesAutoresizingMaskIntoConstraints = false
             
             view.addSubview(status)
             NSLayoutConstraint.activate([
                 
-                status.topAnchor.constraint(equalTo: view.topAnchor,constant: 100),
+                status.topAnchor.constraint(equalTo: view.topAnchor,constant: 130),
                 status.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 30),
                 status.heightAnchor.constraint(equalToConstant: 50),
                 status.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 130)
@@ -116,4 +116,3 @@ class FavoriteVC: UIViewController{
     
     
 }
-

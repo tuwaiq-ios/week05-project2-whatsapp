@@ -39,13 +39,13 @@ class ContacstVC : UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = ChatVC()
-        vc.contacts = users[indexPath.row]
+        vc.user = users[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
     
     
     func getUsers() {
-        Firestore.firestore().collection("Users").addSnapshotListener { snapshot, error in
+        Firestore.firestore().collection("users").addSnapshotListener { snapshot, error in
             if error == nil {
                 guard let userID = Auth.auth().currentUser?.uid else {return}
                 for document in snapshot!.documents{
@@ -53,9 +53,11 @@ class ContacstVC : UITableViewController {
                     
                     if data["userID"] as? String != userID {
                         self.users.append(User(
-                            userID: data["userID"] as? String,
-                            name:data ["name"] as? String ,
-                            email:data ["email"] as? String )
+                        id: data["id"] as? String,
+                        name:data ["name"] as? String ,
+                        email:data ["email"] as? String,
+                        image: data ["image"] as? String,
+                        status: data ["status"] as? String )
                         )}
                 }
                 
