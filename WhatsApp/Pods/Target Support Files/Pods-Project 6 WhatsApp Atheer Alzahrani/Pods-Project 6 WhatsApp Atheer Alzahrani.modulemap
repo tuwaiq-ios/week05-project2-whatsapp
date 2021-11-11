@@ -1,6 +1,0 @@
-framework module Pods_Project_6_WhatsApp_Atheer_Alzahrani {
-  umbrella header "Pods-Project 6 WhatsApp Atheer Alzahrani-umbrella.h"
-
-  export *
-  module * { export * }
-}
