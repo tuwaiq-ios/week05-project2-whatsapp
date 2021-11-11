@@ -1,13 +1,12 @@
 //
 //  AppDelegate.swift
-//  Chatapp
+//  ChatApp
 //
-//  Created by Ahmed Assiri on 28/03/1443 AH.
+//  Created by Ahmed Assiri on 04/04/1443 AH.
 //
 
 import UIKit
 import Firebase
-
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

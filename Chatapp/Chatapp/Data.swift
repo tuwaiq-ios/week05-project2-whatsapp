@@ -5,19 +5,21 @@
 //  Created by Ahmed Assiri on 28/03/1443 AH.
 //
 
-import UIKit
-
-struct Message {
-    let message : String?
-    let from1 : String?
-    let to : String?
-   
-}
-
+import Foundation
+import Firebase
 
 struct User {
     let name : String?
-    let status : String?
     let email : String?
-    var uID : String?
+    let id : String?
+    let status : String
+}
+
+
+struct Message {
+    let content : String?
+    let sender : String?
+    let reciever : String?
+    let id : String
+    let timestamp : Timestamp?
 }
