@@ -1,12 +1,14 @@
 //
-//  UsersViewController.swift
+//  User.swift
 //  ChattingApp
 //
-//  Created by dmdm on 01/11/2021.
+//  Created by dmdm on 11/11/2021.
 //
 
 import UIKit
 import Firebase
+import FirebaseFirestore
+
 class UsersViewController : UITableViewController {
     
     var users = [User]()
@@ -35,24 +37,26 @@ class UsersViewController : UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = ChatViewController()
+        let vc = ChatVC()
         vc.user = users[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
     
     
     func getUsers() {
-        Firestore.firestore().collection("Users").addSnapshotListener { snapshot, error in
+        Firestore.firestore().collection("users").addSnapshotListener { snapshot, error in
             if error == nil {
+                self.users.removeAll()
                 guard let userID = Auth.auth().currentUser?.uid else {return}
                 for document in snapshot!.documents{
                     let data = document.data()
                     
-                    if data["userID"] as? String != userID {
+                    if data["id"] as? String != userID {
                         self.users.append(User(
                             name: data["name"] as? String,
-                            email: data["email"] as?String,
-                            userID: data["userID"] as? String))
+                            email: data["email"] as? String,
+                            id: data["id"] as? String,
+                            status: data["status"] as? String ?? ""))
                     }
                     
                 }

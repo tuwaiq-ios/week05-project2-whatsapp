@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>443556364843-obggd2itlm3qf1vr3ei0utghvg0g9man.apps.googleusercontent.com</string>
+	<string>365379051447-f422sdhv099q21bpfg0a090ibv2njq20.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.443556364843-obggd2itlm3qf1vr3ei0utghvg0g9man</string>
+	<string>com.googleusercontent.apps.365379051447-f422sdhv099q21bpfg0a090ibv2njq20</string>
 	<key>API_KEY</key>
-	<string>AIzaSyA2INPm4cupIcOyIbcNx-8Kaftk5xqiIYk</string>
+	<string>AIzaSyBqIgxelTIlkqVUsKQ2_5hRvtkJU2KRXsI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>443556364843</string>
+	<string>365379051447</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.deemaalkamdi.ChattingApp</string>
+	<string>alanood.com.MychatApp</string>
 	<key>PROJECT_ID</key>
-	<string>chattingapp-bc68b</string>
+	<string>tuwaiq-ios</string>
 	<key>STORAGE_BUCKET</key>
-	<string>chattingapp-bc68b.appspot.com</string>
+	<string>tuwaiq-ios.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:443556364843:ios:de744163dccbf72b08a06e</string>
+	<string>1:365379051447:ios:1f54f7f466b0c809225232</string>
+	<key>DATABASE_URL</key>
+	<string>https://tuwaiq-ios-default-rtdb.europe-west1.firebasedatabase.app</string>
 </dict>
 </plist>

@@ -2,11 +2,12 @@
 //  SignUpViewController.swift
 //  ChattingApp
 //
-//  Created by dmdm on 01/11/2021.
+//  Created by dmdm on 11/11/2021.
 //
 
 import UIKit
 import Firebase
+
 class SignUpViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -64,9 +65,10 @@ class SignUpViewController: UIViewController {
     
     @objc func signupAction() {
         print("123")
+
         if let email = emailTextField.text,
-          let password = passwordTextField.text,
-          let name = nameTextField.text {
+           let password = passwordTextField.text,
+           let name = nameTextField.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
                     print(e)
@@ -101,9 +103,3 @@ extension SignUpViewController {
         ])
     }
 }
-
-
-
-
-
-
