@@ -124,19 +124,7 @@ class LoginVC: UIViewController {
     
     
     @objc func SignupVC(_ sender: Any) {
-        //        let namee = name.text ?? ""
-        //        let emaill = email.text ?? ""
-        //        let passwordd = password.text ?? ""
-        //        let conff = conf.text ?? ""
-        
-        //        guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-        //        Firestore.firestore().document("users").setData([
-        //            "name" : name.text,
-        //            "uID" : currentUserID,
-        //            "email" : email.text,
-        //            "status" : ""
-        //
-        //        ])
+       
         
         
         if let email = email.text, email.isEmpty == false,
@@ -155,10 +143,10 @@ class LoginVC: UIViewController {
                 guard let currentUserID = Auth.auth().currentUser?.uid else {return}
                 Firestore.firestore().document("users/\(currentUserID)").setData([
                     "name" : self.name.text,
-                    "uID" : currentUserID,
+                    "id" : currentUserID,
                     "email" : self.email.text,
                     "status" : "online"
-                ])
+                ], merge : true)
             }
         }
         

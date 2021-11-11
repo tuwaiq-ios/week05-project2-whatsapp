@@ -70,9 +70,13 @@ class  ContactVC: UITableViewController {
                 for document in snapshot!.documents{
                     let data = document.data()
                     
-                    if data["uID"] as? String != userID {
-                        self.users.append(User(name: data["name"] as? String, status: data["status"] as? String, email: data["email"] as? String,
-                            uID: data["uID"] as? String))
+                    if data["id"] as? String != userID {
+                        self.users.append(User(name: data["name"] as? String, status: data["status"] as? String,
+                            email: data["email"] as? String,
+                            id: data["id"] as? String,
+                            img: data["img"] as? String
+                                              )
+                        )
                     }
                     
                 }

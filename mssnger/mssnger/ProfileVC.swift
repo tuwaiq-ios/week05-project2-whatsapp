@@ -140,12 +140,12 @@ class ProfileVC : UIViewController{
     }
     @objc func B() {
         guard let currentUserID = Auth.auth().currentUser?.uid else {return}
-        Firestore.firestore().document("users/\(currentUserID)").updateData([
+        Firestore.firestore().document("users/\(currentUserID)").setData([
             "name" : name1.text,
             "uID" : currentUserID,
             "status" :status.text,
             
-        ])
+        ], merge:true)
         let alert1 = UIAlertController(
             title: ("Saved"),
             message: "Saved update data",

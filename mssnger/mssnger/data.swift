@@ -6,12 +6,21 @@
 //
 
 import Foundation
-
+import Firebase
 struct Message {
-    let message : String?
-    let from1 : String?
-    let to : String?
-   // let date : String?
+    let content : String?
+    let sender : String?
+    let reciever : String?
+    let id : String?
+    let timestamp : Timestamp
+    
+    func getNiceDate() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        dateFormatter.timeStyle = .none
+        
+        return dateFormatter.string(from: timestamp.dateValue())
+    }
 }
 
 
@@ -19,7 +28,8 @@ struct User {
     let name : String?
     let status : String?
     let email : String?
-    var uID : String?
+    var id : String?
+    let img : String?
 }
 
 
