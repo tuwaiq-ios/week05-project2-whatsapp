@@ -11,8 +11,14 @@ class Message: NSObject {
 
     var fromId: String?
     var text: String?
+    
     var timestamp: NSNumber?
     var toId: String?
+    var id: String?
+    //var sender:String?
+   // var reciver:String?
+   // var content:String?
+   // var timestamp: timestamp?
     
     init(dictionary: [String: Any]) {
         self.fromId = dictionary["fromId"] as? String
