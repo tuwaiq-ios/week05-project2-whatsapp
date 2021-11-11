@@ -5,6 +5,7 @@
 //  Created by Hassan Yahya on 26/03/1443 AH.
 //
 import UIKit
+
 class favorite:UIViewController{
 	var img: UIImageView = {
 		let imageView = UIImageView()

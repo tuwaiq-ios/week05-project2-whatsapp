@@ -6,17 +6,20 @@
 //
 
 import Foundation
-
+import Firebase
 
 struct User {
 	let name : String?
 	let email : String?
-	let userID : String?
+	let id : String?
+	let status : String
 }
 
 
 struct Message {
-	let message : String?
+	let content : String?
 	let sender : String?
 	let reciever : String?
+	let id : String
+	let timestamp : Timestamp?
 }

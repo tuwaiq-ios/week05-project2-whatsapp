@@ -19,7 +19,7 @@
 		5EEAC309272FDD2100AB561C /* users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC308272FDD2100AB561C /* users.swift */; };
 		5EEAC30B272FF93300AB561C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC30A272FF93300AB561C /* ChatViewController.swift */; };
 		5EEAC30D272FF94B00AB561C /* Tab Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEAC30C272FF94B00AB561C /* Tab Bar.swift */; };
-		5EEAC30F272FFD5700AB561C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EEAC30E272FFD5700AB561C /* GoogleService-Info.plist */; };
+		5EF796F3273A489E00890375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EF796F2273A489E00890375 /* GoogleService-Info.plist */; };
 		AEC4B66DBDFCF1E9B604C1CD /* Pods_whatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D21AC9E9E7A43ECADB45475 /* Pods_whatsApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		5EEAC308272FDD2100AB561C /* users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = users.swift; sourceTree = "<group>"; };
 		5EEAC30A272FF93300AB561C /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		5EEAC30C272FF94B00AB561C /* Tab Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tab Bar.swift"; sourceTree = "<group>"; };
-		5EEAC30E272FFD5700AB561C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EF796F2273A489E00890375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D21AC9E9E7A43ECADB45475 /* Pods_whatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -79,7 +79,7 @@
 			children = (
 				5EEAC2EA272E6A4800AB561C /* AppDelegate.swift */,
 				5EEAC2EC272E6A4800AB561C /* SceneDelegate.swift */,
-				5EEAC30E272FFD5700AB561C /* GoogleService-Info.plist */,
+				5EF796F2273A489E00890375 /* GoogleService-Info.plist */,
 				5EEAC2EE272E6A4800AB561C /* SignUpViewController.swift */,
 				5EEAC2FE272FBBEC00AB561C /* LoginViewController.swift */,
 				5EEAC30A272FF93300AB561C /* ChatViewController.swift */,
@@ -174,7 +174,7 @@
 			files = (
 				5EEAC2F7272E6A4A00AB561C /* LaunchScreen.storyboard in Resources */,
 				5EEAC2F4272E6A4A00AB561C /* Assets.xcassets in Resources */,
-				5EEAC30F272FFD5700AB561C /* GoogleService-Info.plist in Resources */,
+				5EF796F3273A489E00890375 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

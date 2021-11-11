@@ -6,152 +6,143 @@
 //
 
 
-
 import UIKit
+import FirebaseFirestore
+import Firebase
 class ProfileVC : UIViewController{
+	
+	
 	var img: UIImageView = {
 		let imageView = UIImageView()
-		imageView.image = UIImage(named: "PM")
+		imageView.image = UIImage(named: "PLLL")
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		return imageView
 	}()
-	let name = UILabel()
-	let status = UILabel()
-	
-	
-	
+	let name : UITextField = {
+		$0.translatesAutoresizingMaskIntoConstraints = false
+		$0.placeholder = "Write your name"
+		$0.backgroundColor = .init(white: 0.85, alpha: 1)
+		$0.layer.cornerRadius = 22.5
+		$0.textAlignment = .center
+		return $0
+	}(UITextField())
+	let status : UITextField = {
+		$0.translatesAutoresizingMaskIntoConstraints = false
+		$0.placeholder = "Write your status"
+		$0.backgroundColor = .init(white: 0.85, alpha: 1)
+		$0.layer.cornerRadius = 22.5
+		$0.textAlignment = .center
+
+		return $0
+	}(UITextField())
+	let Button : UIButton = {
+		$0.backgroundColor = .darkGray
+		$0.setTitle("Save", for: .normal)
+		$0.tintColor = .black
+		$0.layer.cornerRadius = 22.5
+		$0.translatesAutoresizingMaskIntoConstraints = false
+		$0.addTarget(self, action: #selector(haB), for: .touchUpInside)
+		return $0
+	}(UIButton())
+	let Button1 : UIButton = {
+		$0.backgroundColor = .white
+		$0.setTitle("sign out", for: .normal)
+		$0.setTitleColor(UIColor.red, for: .normal)
+		$0.translatesAutoresizingMaskIntoConstraints = false
+		$0.addTarget(self, action: #selector(A), for: .touchUpInside)
+		return $0
+	}(UIButton())
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
 		view.backgroundColor = .white
-		
-		view.addSubview(img)
+			view.addSubview(img)
+		img.contentMode = .scaleAspectFit
 		NSLayoutConstraint.activate([
-			
-			img.topAnchor.constraint(equalTo: view.topAnchor, constant: 30),
-			img.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10),
-			img.heightAnchor.constraint(equalToConstant: 80),
+			img.topAnchor.constraint(equalTo: view.topAnchor, constant: 170),
+			img.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			img.heightAnchor.constraint(equalToConstant: 200),
 			img.widthAnchor.constraint(equalTo: img.heightAnchor,multiplier: 100/100)])
 		
-		
-		
-		name.text = "Hassan"
-		name.font = .boldSystemFont(ofSize: 23)
+				name.font = .boldSystemFont(ofSize: 23)
 		name.translatesAutoresizingMaskIntoConstraints = false
-		
 		view.addSubview(name)
 		NSLayoutConstraint.activate([
-			
-			name.topAnchor.constraint(equalTo: view.topAnchor,constant: 40),
-			name.leftAnchor.constraint(equalTo: img.leftAnchor , constant: -90),
-			name.heightAnchor.constraint(equalToConstant: 80),
-			name.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 100)
+			name.topAnchor.constraint(equalTo: view.topAnchor,constant: 440),
+			name.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 50),
+			name.heightAnchor.constraint(equalToConstant: 40),
+			name.widthAnchor.constraint(equalToConstant: 290),
+			//name.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 100)
 		])
-		
-		
-		status.text = "online"
 		status.textColor = .green
 		status.translatesAutoresizingMaskIntoConstraints = false
-		
 		view.addSubview(status)
 		NSLayoutConstraint.activate([
-			
-			status.topAnchor.constraint(equalTo: view.topAnchor,constant: 70),
-			status.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 30),
-			status.heightAnchor.constraint(equalToConstant: 20),
-			status.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 100)
+			status.topAnchor.constraint(equalTo: view.topAnchor,constant: 485),
+			status.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 50),
+			status.heightAnchor.constraint(equalToConstant: 40),
+			status.widthAnchor.constraint(equalToConstant: 290),
 		])
-	
-		
-		var img: UIImageView = {
-			let imageView = UIImageView()
-			imageView.image = UIImage(named: "PM")
-			imageView.translatesAutoresizingMaskIntoConstraints = false
-			return imageView
-		}()
-		let name = UILabel()
-		let status = UILabel()
-		
-	
-			
-			view.backgroundColor = .white
-			
-			view.addSubview(img)
-			NSLayoutConstraint.activate([
-				img.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
-				img.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10),
-				img.heightAnchor.constraint(equalToConstant: 80),
-				img.widthAnchor.constraint(equalTo: img.heightAnchor,multiplier: 100/100)])
-			
-			
-			
-			name.text = "Mohamaad"
-			name.font = .boldSystemFont(ofSize: 23)
-			name.translatesAutoresizingMaskIntoConstraints = false
-			
-			view.addSubview(name)
-			NSLayoutConstraint.activate([
-				
-				name.topAnchor.constraint(equalTo: view.topAnchor,constant: 80),
-				name.leftAnchor.constraint(equalTo: img.leftAnchor , constant: -90),
-				name.heightAnchor.constraint(equalToConstant: 400),
-				name.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 140)
-			])
-			
-			
-			status.text = "offline"
-			status.textColor = .green
-			status.translatesAutoresizingMaskIntoConstraints = false
-			
-			view.addSubview(status)
-			NSLayoutConstraint.activate([
-				
-				status.topAnchor.constraint(equalTo: view.topAnchor,constant: 100),
-				status.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 30),
-				status.heightAnchor.constraint(equalToConstant: 50),
-				status.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 130)
-			])
-		view.backgroundColor = .gray
-		
-		view.addSubview(img)
+		view.addSubview(Button)
 		NSLayoutConstraint.activate([
-			img.topAnchor.constraint(equalTo: view.topAnchor, constant: 120),
-			img.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 10),
-			img.heightAnchor.constraint(equalToConstant: 80),
-			img.widthAnchor.constraint(equalTo: img.heightAnchor,multiplier: 100/100)])
-		
-		
-		
-		name.text = "Fawaz"
-		name.font = .boldSystemFont(ofSize: 23)
-		name.translatesAutoresizingMaskIntoConstraints = false
-		
-		view.addSubview(name)
-		NSLayoutConstraint.activate([
-			
-			name.topAnchor.constraint(equalTo: view.topAnchor,constant: 80),
-			name.leftAnchor.constraint(equalTo: img.leftAnchor , constant: -90),
-			name.heightAnchor.constraint(equalToConstant: 120),
-			name.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 140)
+			Button.topAnchor.constraint(equalTo: view.topAnchor,constant: 570),
+
+//			Button.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 500),
+			Button.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+			Button.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+			Button.heightAnchor.constraint(equalToConstant: 70)
 		])
-		
-		
-		status.text = "offline"
-		status.textColor = .red
-		status.translatesAutoresizingMaskIntoConstraints = false
-		
-		view.addSubview(status)
+		view.addSubview(Button1)
 		NSLayoutConstraint.activate([
-			
-			status.topAnchor.constraint(equalTo: view.topAnchor,constant: 140),
-			status.leftAnchor.constraint(equalTo: view.leftAnchor , constant: 30),
-			status.heightAnchor.constraint(equalToConstant: 50),
-			status.trailingAnchor.constraint(equalTo: view.trailingAnchor , constant: 130)
+			Button1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 570),
+			Button1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
+			Button1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
+			Button1.heightAnchor.constraint(equalToConstant: 70)
 		])
-		view.backgroundColor = .white
+		guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+		Firestore.firestore()
+			.document("users/\(currentUserID)")
+			.addSnapshotListener{ doucument, error in
+				if error != nil {
+					print (error)
+					return
+				}
+				self.name.text = doucument?.data()?["name"] as? String
+				self.status.text = doucument?.data()?["status"] as? String
+			}
 	}
-	
-	
-	
+	@objc func haB() {
+		guard let currentUserID = Auth.auth().currentUser?.uid else {return}
+		Firestore.firestore().document("users/\(currentUserID)").updateData([
+			"name" : name.text,
+			"id" : currentUserID,
+			"status" :status.text,
+		])
+		let alert1 = UIAlertController(
+			title: ("Saved"),
+			message: "Saved update data",
+			preferredStyle: .alert)
+		alert1.addAction(
+			UIAlertAction(
+				title: "OK",
+				style: .default,
+				handler: { action in
+					print("OK")
+				}
+			)
+		)
+		present(alert1, animated: true, completion: nil)
+	}
+	@objc func A() {
+		let firebaseAuth = Auth.auth()
+		do {
+			try firebaseAuth.signOut()
+			dismiss(animated: true, completion: nil)
+		} catch let signOutError as NSError {
+			print ("Error signing out: \(signOutError.localizedDescription)")
+		}
+	}
 }
+
+
+

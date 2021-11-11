@@ -9,10 +9,25 @@ import UIKit
 import Firebase
 
 class LoginViewController: UIViewController {
+	var imgUser: UIImageView = {
+		let imageView = UIImageView()
+		imageView.image = UIImage(named: "PLL")
+		imageView.translatesAutoresizingMaskIntoConstraints = false
+		return imageView
+	}()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		setupUI()
+		
+		view.addSubview(imgUser)
+		NSLayoutConstraint.activate([
+			imgUser.topAnchor.constraint(equalTo: view.topAnchor, constant: 220),
+			imgUser.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			imgUser.heightAnchor.constraint(equalToConstant: 300),
+			imgUser.widthAnchor.constraint(equalTo: imgUser.heightAnchor,multiplier: 100/100)])
+		
+		
 	}
 
 	
@@ -50,7 +65,7 @@ class LoginViewController: UIViewController {
 	let signUpButton : UIButton = {
 		$0.setTitle("Sign Up", for: .normal)
 		$0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 22)
-		$0.backgroundColor = .cyan
+		$0.backgroundColor = .systemCyan
 		$0.layer.cornerRadius = 22.5
 		$0.tintColor = .black
 		$0.addTarget(self, action: #selector(showSignupVC), for: .touchUpInside)
@@ -124,7 +139,7 @@ extension LoginViewController {
 		
 		
 		NSLayoutConstraint.activate([
-			stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
+			stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 500),
 			stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
 			stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
 			stackView.heightAnchor.constraint(equalToConstant: 210)
