@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BF4DDA9AA9E0E9B5D39A6DC /* Pods_ChatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F11B1DECF1B0FF4F8DD6DD18 /* Pods_ChatApp.framework */; };
+		FC28B2E227412AB800FE8427 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC28B2E127412AB800FE8427 /* SceneDelegate.swift */; };
 		FC2DBC65273D005B005796EB /* Farvairt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2DBC64273D005B005796EB /* Farvairt.swift */; };
 		FC2DBC67273D00B1005796EB /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2DBC66273D00B1005796EB /* signUp.swift */; };
 		FC2F12F8273A4D0C00534584 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F12F7273A4D0C00534584 /* AppDelegate.swift */; };
@@ -20,13 +21,13 @@
 		FC2F1333273A564000534584 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F132D273A564000534584 /* Data.swift */; };
 		FC2F1334273A564000534584 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F132E273A564000534584 /* Chat.swift */; };
 		FC2F1335273A564000534584 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F132F273A564000534584 /* Profile.swift */; };
-		FC2F1337273A567200534584 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2F1336273A567200534584 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A30B2EA6B9A757CE47DD9DA1 /* Pods-ChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.debug.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E7AFF5D176778F3374014F72 /* Pods-ChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatApp.release.xcconfig"; path = "Target Support Files/Pods-ChatApp/Pods-ChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		F11B1DECF1B0FF4F8DD6DD18 /* Pods_ChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC28B2E127412AB800FE8427 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FC2DBC64273D005B005796EB /* Farvairt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Farvairt.swift; sourceTree = "<group>"; };
 		FC2DBC66273D00B1005796EB /* signUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
 		FC2DBC68273D0964005796EB /* ChatApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChatApp.entitlements; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		FC2F132D273A564000534584 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		FC2F132E273A564000534584 /* Chat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		FC2F132F273A564000534584 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		FC2F1336273A567200534584 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../week5/week05-project2-whatsapp/Chatapp/Chatapp/SceneDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,13 +95,13 @@
 		FC2F12F6273A4D0C00534584 /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				FC28B2E127412AB800FE8427 /* SceneDelegate.swift */,
+				FC2F12F7273A4D0C00534584 /* AppDelegate.swift */,
 				FC2DBC68273D0964005796EB /* ChatApp.entitlements */,
 				FC2F130B273A4D3C00534584 /* GoogleService-Info.plist */,
 				FC2F1300273A4D0E00534584 /* Assets.xcassets */,
 				FC2F1302273A4D0E00534584 /* LaunchScreen.storyboard */,
 				FC2F1305273A4D0E00534584 /* Info.plist */,
-				FC2F12F7273A4D0C00534584 /* AppDelegate.swift */,
-				FC2F1336273A567200534584 /* SceneDelegate.swift */,
 				FC2F132D273A564000534584 /* Data.swift */,
 				FC2F132C273A564000534584 /* Login.swift */,
 				FC2F132E273A564000534584 /* Chat.swift */,
@@ -233,9 +233,9 @@
 				FC2F12F8273A4D0C00534584 /* AppDelegate.swift in Sources */,
 				FC2F1331273A564000534584 /* Contact.swift in Sources */,
 				FC2F1332273A564000534584 /* Login.swift in Sources */,
-				FC2F1337273A567200534584 /* SceneDelegate.swift in Sources */,
 				FC2DBC67273D00B1005796EB /* signUp.swift in Sources */,
 				FC2F1334273A564000534584 /* Chat.swift in Sources */,
+				FC28B2E227412AB800FE8427 /* SceneDelegate.swift in Sources */,
 				FC2DBC65273D005B005796EB /* Farvairt.swift in Sources */,
 				FC2F1335273A564000534584 /* Profile.swift in Sources */,
 				FC2F1330273A564000534584 /* TabBar.swift in Sources */,
