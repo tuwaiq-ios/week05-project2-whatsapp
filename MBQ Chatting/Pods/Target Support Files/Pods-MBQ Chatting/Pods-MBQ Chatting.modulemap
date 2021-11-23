@@ -1,6 +1,0 @@
-framework module Pods_MBQ_Chatting {
-  umbrella header "Pods-MBQ Chatting-umbrella.h"
-
-  export *
-  module * { export * }
-}
