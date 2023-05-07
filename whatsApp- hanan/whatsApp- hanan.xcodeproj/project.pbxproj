@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86772E40272CCF4300A6A8D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86772E3F272CCF4300A6A8D1 /* AppDelegate.swift */; };
+		86772E42272CCF4300A6A8D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86772E41272CCF4300A6A8D1 /* SceneDelegate.swift */; };
+		86772E44272CCF4300A6A8D1 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86772E43272CCF4300A6A8D1 /* MessagesController.swift */; };
+		86772E47272CCF4300A6A8D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86772E45272CCF4300A6A8D1 /* Main.storyboard */; };
+		86772E49272CCF4700A6A8D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86772E48272CCF4700A6A8D1 /* Assets.xcassets */; };
+		86772E4C272CCF4700A6A8D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86772E4A272CCF4700A6A8D1 /* LaunchScreen.storyboard */; };
+		86772E54272CCFC000A6A8D1 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86772E53272CCFC000A6A8D1 /* LoginController.swift */; };
+		867756CD272E693400A5B7D7 /* NewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867756CC272E693400A5B7D7 /* NewMessageController.swift */; };
+		867756D0272E696300A5B7D7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867756CF272E696300A5B7D7 /* User.swift */; };
+		867756D2272E705300A5B7D7 /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867756D1272E705300A5B7D7 /* LoginController+handlers.swift */; };
+		867756D4272EC3C700A5B7D7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867756D3272EC3C700A5B7D7 /* Extensions.swift */; };
+		867CA3B727301FC800E36391 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867CA3B627301FC800E36391 /* ChatMessageCell.swift */; };
+		867E7D24273A4F8800A28055 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 867E7D23273A4F8800A28055 /* GoogleService-Info.plist */; };
+		867FA3C6272FBA04003C3BB5 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FA3C5272FBA04003C3BB5 /* Message.swift */; };
+		867FA3C8272FBBA8003C3BB5 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FA3C7272FBBA8003C3BB5 /* UserCell.swift */; };
+		867FA3CA272FBED7003C3BB5 /* ChatLogoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867FA3C9272FBED7003C3BB5 /* ChatLogoController.swift */; };
+		8690A3512731E88C00B258A7 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8690A3502731E88C00B258A7 /* ProfileController.swift */; };
+		EE6C566291C36B39FB2AC58B /* Pods_whatsApp__hanan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3076CCB51A27F8DF7FE32A1A /* Pods_whatsApp__hanan.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3076CCB51A27F8DF7FE32A1A /* Pods_whatsApp__hanan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_whatsApp__hanan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5672595BCF72CBD613BCA4A9 /* Pods-whatsApp- hanan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsApp- hanan.release.xcconfig"; path = "Target Support Files/Pods-whatsApp- hanan/Pods-whatsApp- hanan.release.xcconfig"; sourceTree = "<group>"; };
+		86772E3C272CCF4300A6A8D1 /* whatsApp- hanan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "whatsApp- hanan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86772E3F272CCF4300A6A8D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86772E41272CCF4300A6A8D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		86772E43272CCF4300A6A8D1 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		86772E46272CCF4300A6A8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86772E48272CCF4700A6A8D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86772E4B272CCF4700A6A8D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86772E4D272CCF4700A6A8D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86772E53272CCFC000A6A8D1 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		867756CC272E693400A5B7D7 /* NewMessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageController.swift; sourceTree = "<group>"; };
+		867756CF272E696300A5B7D7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		867756D1272E705300A5B7D7 /* LoginController+handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
+		867756D3272EC3C700A5B7D7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		867CA3B627301FC800E36391 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		867E7D23273A4F8800A28055 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		867FA3C5272FBA04003C3BB5 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		867FA3C7272FBBA8003C3BB5 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		867FA3C9272FBED7003C3BB5 /* ChatLogoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogoController.swift; sourceTree = "<group>"; };
+		8690A3502731E88C00B258A7 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		A92FEDFDBC052278A93E226A /* Pods-whatsApp- hanan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-whatsApp- hanan.debug.xcconfig"; path = "Target Support Files/Pods-whatsApp- hanan/Pods-whatsApp- hanan.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86772E39272CCF4300A6A8D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE6C566291C36B39FB2AC58B /* Pods_whatsApp__hanan.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		865B036B273067210035E975 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				867756D3272EC3C700A5B7D7 /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		865B036C273067880035E975 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				867756CC272E693400A5B7D7 /* NewMessageController.swift */,
+				86772E53272CCFC000A6A8D1 /* LoginController.swift */,
+				86772E43272CCF4300A6A8D1 /* MessagesController.swift */,
+				867756D1272E705300A5B7D7 /* LoginController+handlers.swift */,
+				867FA3C9272FBED7003C3BB5 /* ChatLogoController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		865B036D273067AB0035E975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				867FA3C7272FBBA8003C3BB5 /* UserCell.swift */,
+				867CA3B627301FC800E36391 /* ChatMessageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		86772E33272CCF4300A6A8D1 = {
+			isa = PBXGroup;
+			children = (
+				86772E3E272CCF4300A6A8D1 /* whatsApp- hanan */,
+				86772E3D272CCF4300A6A8D1 /* Products */,
+				88C15A07174B71D8155E969A /* Pods */,
+				9AAD52E04D3AF1F0C37151C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86772E3D272CCF4300A6A8D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86772E3C272CCF4300A6A8D1 /* whatsApp- hanan.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86772E3E272CCF4300A6A8D1 /* whatsApp- hanan */ = {
+			isa = PBXGroup;
+			children = (
+				8690A3502731E88C00B258A7 /* ProfileController.swift */,
+				865B036D273067AB0035E975 /* View */,
+				865B036C273067880035E975 /* Controller */,
+				865B036B273067210035E975 /* Helpers */,
+				867756CE272E694400A5B7D7 /* Model */,
+				86772E3F272CCF4300A6A8D1 /* AppDelegate.swift */,
+				86772E41272CCF4300A6A8D1 /* SceneDelegate.swift */,
+				86772E45272CCF4300A6A8D1 /* Main.storyboard */,
+				86772E48272CCF4700A6A8D1 /* Assets.xcassets */,
+				86772E4A272CCF4700A6A8D1 /* LaunchScreen.storyboard */,
+				867E7D23273A4F8800A28055 /* GoogleService-Info.plist */,
+				86772E4D272CCF4700A6A8D1 /* Info.plist */,
+			);
+			path = "whatsApp- hanan";
+			sourceTree = "<group>";
+		};
+		867756CE272E694400A5B7D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				867FA3C5272FBA04003C3BB5 /* Message.swift */,
+				867756CF272E696300A5B7D7 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		88C15A07174B71D8155E969A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A92FEDFDBC052278A93E226A /* Pods-whatsApp- hanan.debug.xcconfig */,
+				5672595BCF72CBD613BCA4A9 /* Pods-whatsApp- hanan.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9AAD52E04D3AF1F0C37151C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3076CCB51A27F8DF7FE32A1A /* Pods_whatsApp__hanan.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86772E3B272CCF4300A6A8D1 /* whatsApp- hanan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86772E50272CCF4700A6A8D1 /* Build configuration list for PBXNativeTarget "whatsApp- hanan" */;
+			buildPhases = (
+				F62361666646067F1D6A0216 /* [CP] Check Pods Manifest.lock */,
+				86772E38272CCF4300A6A8D1 /* Sources */,
+				86772E39272CCF4300A6A8D1 /* Frameworks */,
+				86772E3A272CCF4300A6A8D1 /* Resources */,
+				CE06195096B0BBFEAF97EC9F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "whatsApp- hanan";
+			productName = "whatsApp- hanan";
+			productReference = 86772E3C272CCF4300A6A8D1 /* whatsApp- hanan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86772E34272CCF4300A6A8D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					86772E3B272CCF4300A6A8D1 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 86772E37272CCF4300A6A8D1 /* Build configuration list for PBXProject "whatsApp- hanan" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86772E33272CCF4300A6A8D1;
+			productRefGroup = 86772E3D272CCF4300A6A8D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86772E3B272CCF4300A6A8D1 /* whatsApp- hanan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86772E3A272CCF4300A6A8D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86772E4C272CCF4700A6A8D1 /* LaunchScreen.storyboard in Resources */,
+				867E7D24273A4F8800A28055 /* GoogleService-Info.plist in Resources */,
+				86772E49272CCF4700A6A8D1 /* Assets.xcassets in Resources */,
+				86772E47272CCF4300A6A8D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE06195096B0BBFEAF97EC9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whatsApp- hanan/Pods-whatsApp- hanan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-whatsApp- hanan/Pods-whatsApp- hanan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-whatsApp- hanan/Pods-whatsApp- hanan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F62361666646067F1D6A0216 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-whatsApp- hanan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86772E38272CCF4300A6A8D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86772E44272CCF4300A6A8D1 /* MessagesController.swift in Sources */,
+				867756CD272E693400A5B7D7 /* NewMessageController.swift in Sources */,
+				867756D0272E696300A5B7D7 /* User.swift in Sources */,
+				867FA3C6272FBA04003C3BB5 /* Message.swift in Sources */,
+				867756D4272EC3C700A5B7D7 /* Extensions.swift in Sources */,
+				8690A3512731E88C00B258A7 /* ProfileController.swift in Sources */,
+				867FA3CA272FBED7003C3BB5 /* ChatLogoController.swift in Sources */,
+				86772E54272CCFC000A6A8D1 /* LoginController.swift in Sources */,
+				867756D2272E705300A5B7D7 /* LoginController+handlers.swift in Sources */,
+				86772E40272CCF4300A6A8D1 /* AppDelegate.swift in Sources */,
+				867CA3B727301FC800E36391 /* ChatMessageCell.swift in Sources */,
+				867FA3C8272FBBA8003C3BB5 /* UserCell.swift in Sources */,
+				86772E42272CCF4300A6A8D1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86772E45272CCF4300A6A8D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86772E46272CCF4300A6A8D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86772E4A272CCF4700A6A8D1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86772E4B272CCF4700A6A8D1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86772E4E272CCF4700A6A8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86772E4F272CCF4700A6A8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86772E51272CCF4700A6A8D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A92FEDFDBC052278A93E226A /* Pods-whatsApp- hanan.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 822RG578M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "whatsApp- hanan/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanan.whatsApp--hanan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86772E52272CCF4700A6A8D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5672595BCF72CBD613BCA4A9 /* Pods-whatsApp- hanan.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 822RG578M9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "whatsApp- hanan/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hanan.whatsApp--hanan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86772E37272CCF4300A6A8D1 /* Build configuration list for PBXProject "whatsApp- hanan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86772E4E272CCF4700A6A8D1 /* Debug */,
+				86772E4F272CCF4700A6A8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86772E50272CCF4700A6A8D1 /* Build configuration list for PBXNativeTarget "whatsApp- hanan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86772E51272CCF4700A6A8D1 /* Debug */,
+				86772E52272CCF4700A6A8D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86772E34272CCF4300A6A8D1 /* Project object */;
+}
